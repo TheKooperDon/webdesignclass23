@@ -46,18 +46,40 @@ padding: 10px;
 
 /* two column layout */
 
-
+.two-col{
+	display: grid;
+	grid-template-columns: 48% 48%;
+	grid-column-gap: 4%;
+}
 
 /* three column layout */
 
-
+.three-col{
+	display: grid;
+	grid-template-columns: 32% 32% 32%;
+	grid-column-gap: 2%;
+	grid-row-gap: 20px;
+	
+}
 
 
 /* background rows */
 
+.gray-background{
 
+padding: 10px 0;
+background-color: #dedede;
+
+
+}
 
 /* misc */
+.pizza-item {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align:left;
+}
 
 .pizza-feature {
 	width: 100%;
@@ -98,9 +120,11 @@ h2{
 </div>
 
 
+<div class="gray-background">
 <div class="wrapper">
-
+<div class="two-col">
 <section>
+
 <h2>Learn About Our History!</h2>
 <p>James and Ann started making pizza in a camper trailer on the side of the road in Portland, Oregon. Over a four year period we learned how to make great pizza and build a loyal following. We have always loved time spent in outdoor environments and have hiked and camped extensively through the Appalachian and Cascade mountain ranges. The name Wy’east comes from the native name for the mountain we now call Mt. Hood, Portland’s namesake mountain and the source of much of our inspiration. We moved back to our hometown Milwaukee Wisconsin in 2013 so that our families could eat our pizza too.</p>
 <p><a href="">Read More</a></p>
@@ -112,10 +136,14 @@ h2{
 <p><a href="">Read More</a></p>
 </section>
 </div> <!-- /.wrapper -->
+</div>
+</div>
 
 
 <section>
+<div class="three-col">
 <div class="wrapper">
+
 <h2>Menu</h2>
 
 
@@ -157,43 +185,59 @@ h2{
 
 <h4>Ring of Fire</h4>
 <p>Bacon, sport peppers, fontina cheese, finished with honey</p>
+
 </div><!-- /.wrapper -->
+
 </section>
 
 
 
-<section>
-<div class="wrapper">
-<h2>Check out these pies!</h2>
+<section class="gray-background">
 
+<div class="wrapper">
+
+<h2>Check out these pies!</h2>
+<div class="three-col">
+	<div class="pizza-item">
 <img src="images/pizza2.jpg" alt="pizza" class="pizza-feature">
 <h4>Hogsback</h4>
 <p>Sausage and red onion</p>
-
+</div>
+<div class="pizza-item">
 <img src="images/pizza9.jpg" alt="pizza" class="pizza-feature">
 <h4>Three Sisters</h4>
 <p>Fresh mushroom, fresh garlic, and basil</p>
-
+</div>
+<div class="pizza-item">
 <img src="images/pizza6.jpg" alt="pizza" class="pizza-feature">
 <h4>Hot Marmot</h4>
 <p>Pepperoni, fresh garlic, Mama Lil's sweet hot peppers</p>
-
+</div>
+<div class="pizza-item">
 <img src="images/pizza8.jpg" alt="pizza" class="pizza-feature">
 <h4>Loowit</h4>
 <p>Green olives and Mama Lil's sweet hot peppers</p>
-
+</div>
+<div class="pizza-item">
 <img src="images/pizza7.jpg" alt="pizza" class="pizza-feature">
 <h4>Zig-Zag</h4>
 <p>Soppressata and nicoise olives</p>
-
+</div>
 <img src="images/pizza1.jpg" alt="pizza" class="pizza-feature">
 <h4>Margharita</h4>
 <p>Fresh mozzarella and basil</p>
 </div><!-- /.wrapper -->
+</div>
 </section>
 
 </article>
 </main>
+
+
+
+
+
+
 
 <footer id="colophon">
 <div class="wrapper">
