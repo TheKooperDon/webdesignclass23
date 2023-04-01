@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Exercise 2: site structure & hyperlinks</title>
+<link type="text/css" rel="stylesheet" href="http://www.criminalanimal.org/student/styles/syllabus.css">
+<meta charset="utf-8" />
+<style>
+h2 {
+font-size: 1.2em;
+}
+
+.alert {
+	border: 2px solid red;
+	background-color: #dedede;
+	padding: 20px;
+	margin: 10px 0;
+}
+
+code {
+	font-size: 1.3em;
+	color: firebrick;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Web Design<br />HTML Exercise #2</h1>
+</header>
+<main>
+<article>
+<h2>Linking within a nested site structure</h2>
+<h3>Focus on:</h3>
+<ul>
+<li>Basic web page template</li>
+<li>Site hierarchy with nested folders</li>
+<li>Using the anchor tag to create hyperlinks</li>
+<li>Relative pathnames "upstream" and "downstream"</li>
+</ul>
+<h3>Part I:</h3>
+<p>Download <code>ex2links</code> from Canvas (you have already done this because you wouldn't see this file if you hadn't!), and be sure you move it to your web design exercises directory on your hard drive. <strong><mark>NEVER work on files in your downloads directory. Ever.</mark></strong></p>
+<p>To help you understand this assignment and site files structure, please read the page about <a href="site-structure.html" target="_blank">site structure</a> before you begin.</p>
+<ol>
+<li>Using the <code>pets</code> directory inside this links exercise as your root folder, create a site using nested subdirectories. You'll need to make 3 new folders with the following names:
+<ul>
+<li><code>dogs</code></li>
+<li><code>cats</code></li>
+<li><code>fish</code></li>
+</ul>
+<p>
+(A quick reminder that you can call your folders anything that is relevant, as long as it you use the file and folder naming conventions for the web: usually lowercase and never any "illegal characters" - use alpha-numerical, underscore, dash only). The "large site structure" graphic on the site structure page (link above) shows you what your site's structure will look like, although we will not make as many pages.</p>
+<li>Launch your text editor. Open the <code>ex2links</code> folder.</li>
+<li>Create a new file (file > new). In a new file, create the basic HTML page template, with all the necessary tags in their correct order.</li>
+<li>Save the file as <code>index.html</code> in the <code>pets</code> directory inside <code>ex2links</code>. Whenever you create a  new file, you need to be aware of the location you CHOOSE to save it. Don't just save to the default location; it might not be where you want it.</li>
+<li>Be sure that your markup is correct by testing it in the WC3's HTML validator:
+<a href="http://validator.w3.org" target="_blank">http://validator.w3.org</a>. Use "Validate by File Upload" tab - you'll be prompted to find the file on your hard drive, and select it for validation. Correct any errors that the validator identifies. <strong>Validator often does not work in Safari. Use Firefox or Chrome.</strong> If the file upload doesn't work, try the "<a href="https://validator.w3.org/nu/" target="_blank">non-DTD-based validator</a>" link that is on the validator page. Be sure you aren't using Safari!
+</ol>
+<h3>Part II:</h3>
+<ol>
+<li>Once your page validates, you will save the basic page template three times. Use the "save as" option, save <code>index.html</code>, and give it a new file name each of the three times:
+<ul>
+<li>first as: <code>about-dogs.html</code> in <code>dogs</code> folder</li>
+<li>second as: <code>about-cats.html</code> in <code>cats</code> folder</li>
+<li>third as: <code>about-fish.html</code> in <code>fish</code> folder.</li>
+</ul>
+<p>This is creating the bare-bones site files for our exercise. Remember to use all lowercase for your folders and filenames. You have just saved the HTML page template into each of your folders, so you don't need to type it again from scratch. This is also helpful when coding by hand. View your <code>pets</code> folder as a list on the desktop, and look at your site hierarchy. Be sure you understand it.</p></li>
+<li>You should see all the contents of your pets site on the left side of your text editor. Select <code>index.html</code> in your text editor, and type <code>&lt;p&gt;Welcome to the Pets site. Visit our pages about dogs, cats and fish.&lt;/p&gt;</code> in between the <code>&lt;body&gt;&lt;/body&gt;</code> tag (this is your page content). Give the page an appropriate title inside the <code>&lt;title&gt;&lt;/title&gt;</code> tag. Save.&nbsp;</li>
+<li>Select <code>about-dogs.html</code> and type <code>&lt;p&gt;This is the dogs page. Return to the Pets homepage.&lt;/p&gt;</code> in between the <code>&lt;body&gt;&lt;/body&gt;</code> tag. Save. Do the same thing for <code>about-cats.html</code> and <code>about-fish.html</code>, with the text edited appropriately for each topic. Remember to check the text in the title tag!</li>
+<li>Select <code>index.html</code> and create links to the dog, cat and fish pages you just made. Create "inline links." Do not re-type the words, but instead, mark up each word to create a link by surrounding each word in the text you already typed with the ANCHOR tag: <code>&lt;a href="path/to/file.ext"&gt;linked text here&lt;/a&gt;</code> tags around the appropriate text that you have already put in. Remember file structure so that your relative pathname works (hint: your target documents reside "downstream" in separate folders). <strong>Note: <code>"path/to/file.ext"</code> is the format of a generic pathname, and not a literal pathname that will work in your site.</strong> It uses the syntax and terminology of pathnames within the pathname itself. Yours will use the actual names of your directories and html files, with the .html file extension.</li>
+<li>Now, create links back to the Pets Homepage (<code>index.html</code>) on each of the department pages. Remember file hierarchy - Pets Homepage is "upstream".</li>
+<li>Launch browser (Chrome or Firefox) and open your <code>index.html</code> file. Click on the links to make sure they work. De-bug if they do not.</li>
+<li>Now select <code>about-dogs.html</code> and type <code>or visit the pages about cats and fish.</code> after the Pets Homepage text (it should read: "Return to the Pets Homepage, or visit the pages about cats and fish."). Link the words "cats" and "fish" to their pages. Pathnames have to link both upstream and downstream. View in browser see if links work. Then do the same thing for <code>about-cats.html</code> and <code>about-fish.html</code> with appropriately-edited text.</li>
+<li>Recheck to be sure you have accurate and relevant text between the <code>&lt;title&gt;&lt;/title&gt;</code> tag so that each page is properly identified. This is crucial for searchable and bookmarkable sites.</li>
+<li>Create a page called <code>cat-toys.html</code> and save it in the <code>cats</code> directory, and put in a sentence or two of relevant cat toy content. Make a hyperlink to this new toys page from the about cats page. Be sure the text you hyperlink is useful. For instance, "click here" is terrible hyperlinked text and should never be used. However, "learn more about surfboards" is useful text if the hyperlink is going to a surfboard page. Get my drift?</li>
+<li>On each pet page, create a link to an external site that features information about that specific animal (you can google for an appropriate site). Remember that to link to an external site, you need an "absolute" pathname, and within that pathname, you need to include the entire URL with protocol (<code>http://</code>). The easiest way to do this is to copy the URL from the browser address bar. Also, make each external link open in a new browser window using the <code>target</code> attribute in the anchor tag. Do you remember what value for <code>target</code>  will open a new window?</li>
+</ol>
+<div class="alert">
+<p>You must submit this project for a score. To submit, you need to upload the entire pets directory to SOIS. Here are the steps to upload and then submit:</p>
+<ol>
+<li>launch your FTP client and log into your SOIS space</li>
+<li>click <em>inside</em> the <code>public_html</code> directory so you are inside it and ready to drag your pets root folder into this space</li>
+<li>drag the entire <code>pets</code> root folder into the remote site panel in your FTP client. Your root folder will have the site homepage, the different pet subdirectories, and the file about each pet in its appropriate subdirectory (see the large site image in <a href="site-structure.html">site-structure.html</a> but yours will not have the extra files about the different pets)</li>
+<li>once the site is uploaded to SOIS, launch a new browser window, and type in the URL for the site: <code>epantherlogin.uwmsois.com/pets/</code> Of course, use <strong>your</strong> epanther login.</li>
+<li>if this URL does not work, check the spelling of everything and also check where you uploaded your site in the FTP client's remote site panel. Is it inside <code>html_public</code>? Did all the files get uploaded?</li>
+<li>check to be sure all the text is correct and all the links work. If everything works, copy the URL from the browser's address bar.</li>
+<li>go to the Canvas assignment for HTML Exercise 2, and paste the URL as your assignment submission</li>
+</ol>
+</div>
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>CSS Exercise 7: External Style Sheets</title>
+<link type="text/css" rel="stylesheet" href="http://www.criminalanimal.org/student/styles/syllabus.css">
+<meta charset="utf-8" />
+<style>
+h2 {
+font-size: 1.2em;
+}
+code {
+	color: darkred;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+</style>
+</head>
+<body>
+<h1>Web Design<br />CSS Exercise 7</h1>
+<h2>External Style Sheets</h2>
+<h3>Focus on:</h3>
+<ul>
+<li>understand location of style sheet in site files hierarchy (inside <code>styles</code> directory)</li>
+<li>CSS external style sheets using <code>link</code> tag</li>
+<li>Attributes for <code>link</code> tag: <code>href, rel, type</code></li>
+<li>creating site unity with external styles</li>
+<li>using class to differentiate markup on homepage from other pages in the site</li>
+<li>understanding how descendant selectors can allow you to use the "ancestry" of a tag to target it for a particular style, and create different presentation on different pages that use the same markup.</li>
+<li>fixing float issues in page display with <code>clearfix</code> class</li>
+</ul>
+
+<h3>Overview</h3>
+<p>You need to link every page in the Pets site to the single external style sheet. You'll need to create a few new styles to fix float issues as well as set up the homepage so you can style it differently. The homepage has no sidebar, but the other pages do! They are all 2-column float layouts, while the homepage is a one-column layout.</p>
+
+<p>They share a style sheet and the rest of their markup, so we'll use a descendant selector to "target" the homepage with special styles that won't work on any other page.</p>
+
+<h3>Workflow</h3>
+<p>Begin by linking the style sheet to each of the 4 pages in the Pets site. Our PDF lecture notes and video describe this process. Don't forget to fill in the proper values for each of the required attributes of the <code>link</code> tag.</p>
+
+<p>Once you've done this, you'll need to make adjustments to some of the pages and write a few new styles. </p>
+
+<h4>Homepage</h4>
+<p>The homepage does not have a sidebar. You want the main to display the full width of the wrapper. To write a special style rule for the homepage only, you'll need to add a class to the <code>body</code> tag on the homepage only. Call the class "home".</p>
+
+<p>Take a look at the styles on the style sheet that create the 2-column floated layout for the other pages. You'll notice that the main "column" is created with a margin on the left of the main. You need to get rid of that in the style for the homepage's main tag. The class you assigned to the <code>body</code> will let you write a descendant selector to do this!</p>
+
+<p>You'll also notice that the homepage's page name ("Welcome") is a different color than the other pages. Write another descendant selector (using the class that you assigned to the <code>body</code>) to isolate that <code>h2</code> from all the other <code>h2</code>'s on the site.
+
+<h4>Dogs page</h4>
+<p>You have a issue with the floated sidebar on this page, because its contents are taller than the contents of the main. The colophon is text-wrapping around the sidebar. Fix this with the clearfix method. You'll have to create the clearfix style in the style sheet, and apply that style to the page's footer.</p>
+
+<p>This page is more complicated. The <code>header, main, footer, article</code> have all been made "boxy" so margins don't collapse and calculate from tops and bottoms of ancestor display boxes rather than adjacent elements with margins in the layout. border and padding are the properties that make the display boxes "boxy."  </p>
+
+<h4>Cat and Fish Pages</h4>
+<p>You don't really <em>need</em> to do anything here to make the pages look better, except it is a best practice to put the clearfix class in these pages' footer, so that if your content changed, you wouldn't break the layout. So do this. I'll be checking your markup to see that you've added it to the footer in all pages with floated sidebars.</p>
+
+<h3>Validation</h3>
+<p>You want to be sure you've written valid markup and valid styles. Use the online validator tools to check your work. If there are errors, <strong>read what the validator says about them</strong> and check the lines in your markup where the errors occur.</p>
+
+<p>If you don't have the HTML and CSS validators bookmarked yet, you need to do this.</p>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

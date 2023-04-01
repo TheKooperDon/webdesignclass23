@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>Exercise 5 Part I: Image Optimization</title>
+<link type="text/css" rel="stylesheet" href="http://www.criminalanimal.org/student/styles/syllabus.css">
+<meta charset="utf-8" />
+<style>
+h2 {
+font-size: 1.2em;
+}
+code {
+	color: darkred;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+</style>
+</head>
+<body>
+<h1>Web Design<br />HTML Exercise #5 (Part I)</h1>
+<h2>Image Optimization</h2>
+<h3>Focus on:</h3>
+<ul>
+<li>color space and color profile</li>
+<li>pixel dimensions</li>
+<li>appropriate image file format:<code>.jpg, .png</code> (for png, remember to consider both 8-bit and 24-bit)</li>
+<li>image transparency/translucency</li>
+<li>Photoshop <code>export > save for web</code> feature</li>
+<li>controlling Photoshop's crop tool</li>
+<li>using the <code>img</code> tag, with <code>src, alt, height/width</code> attributes</li>
+<li>validation</li>
+</ul>
+
+<h3>Overview</h3>
+<p>Inside the images directory, you'll find a series of images. You'll need to optimize each one for browser display, using the guidelines below.</p>
+
+<h3>Workflow</h3>
+
+<p>Read about each image's requirements below, and then load it into Photoshop and optimize it. You'll need to check and potentially change its color space, its color profile, its pixel dimensions, then optimize in the most appropriate file format for the web.</p>
+
+<p>Other than the translucent circle images, which you'll save with new filenames, you can keep the original filenames when you save your optimized images.</p>
+
+<p>Be sure you put in all the required attributes for the image tag, and figure out the best alternative text for each image.</p>
+
+<p>Optimizing hints:</p>
+<ul>
+<li>The "size" of your image is the amount of data (file size). Keep file sizes as small as possible while retaining good image quality.</li>
+<li>The "pixel dimensions" specify how large your image will look in the page. Appropriate pixel dimensions depend on the purpose of the image in your layout. For the purposes of this class, images should seldom be wider than 1024px, and usually should have much smaller pixel dimensions. The "live space" of most sites optimized for desktop display is about 1200px</li>
+<li>Remember to check the color profile/color space of your images and change as necessary.</li>
+<li>The web-appropriate file format you choose depends on the kind of image it is (flat-color, photographic, translucent). The file formats for the web have specific image types they are used for. What kind of image is a .jpg good for? What kind of image is an 8-bit .png good for? What kind of image is a 24-bit (actually 32-bit) .png good for? What are the differences between file formats?</li>
+<li>To universally reduce the pixel dimensions of your graphic, use <code>file > image size</code> in Photoshop</li>
+<li>To crop out a portion of an image to a specific pixel dimension, use the crop tool in Photoshop, resetting the tool parameters.</li>
+<li>Setting your ruler unit of measurement to pixels, rather than inches, in preferences, helps you understand the pixel dimensions of your graphics.</li>
+<li>The legacy "Save for Web" in photoshop gives you the most options for optimizing your images (<code>export > save for web</code>).</li>
+</ul>
+
+<h3>Optimizing each image</h3>
+
+<h4>Images with translucency</h4>
+<p>Using <code>circles.tif</code>, optimize the image twice. The first time you optimize it, choose the 8-bit png option, and choose a white matte. Save the file as <code>circles-8bit.png</code> (a new filename). You do not need to change the pixel dimensions of this image.</p>
+
+<p>Optimize the image again, but this time choose the 24-bit option, and be sure the transparency box is clicked. Save the file as <code>circles-24bit.png</code></p>
+
+<p>Use the image tag to put each of the images into the page in the "Images with translucency" section of the page. Edit the inline style in the <code>body</code> tag to see what happens when the background color of the page changes. You'll understand the difference between the transparency options when you do this!</p>
+
+<h4>Flat-color graphics/illustrations</h4>
+<p><code>infographic.psd</code> needs display as an info graphic in a hypothetical column that is 700px wide (obviously this column doesn't exist in this page, but such things will exist in the future). This is the maximum display width of your image. However, you want it to be crisp for high-density displays, so you'll use the double-size/half-size trick.</p>
+
+<p><code>uwm-logo.psd</code> is your hypothetical site id. It needs to fit in a banner that includes a menu and and cannot be more than 120px tall. However, you want it to be crisp for high-density displays, so you'll use the double-size/half-size trick.</p>
+
+<p>Additionally, this image has a ton of empty transparent space around it. <strong>You need to first crop out the empty content, as close to the logo as possible.</strong> Then, change the pixel dimensions so that it is the proper size using the double-size/half-size trick. This is a common mistake with images for your websites: there is a bunch of empty space that needs to be removed. Don't neglect to remove it!</p>
+
+<p>Use the image tag to put each of the images into the page in the "Flat-color graphics/illustrations" section of the page.</p>
+
+<h4>Photographs (continuous-tone images)</h4>
+<p><code>teanau-new-zealand.psd</code> is a big beautiful image that will display the width of the live space of a hypothetical page, which is 1200px wide.</p>
+
+<p><code>flowers.psd</code> is to display as a feature image in a hypothetical column that is 600px wide. This is the max width of your image. </p>
+
+<p>Use the image tag to put each of the images into the page in the "Photographs (continuous-tone images)" section of the page.</p>
+
+<h4>Cropping to specific pixel dimensions</h4>
+<p><code>moose-and-squirrel.jpg</code> is an image of Bullwinkle pulling Rocky out of a hat. Use the Photoshop cropping tool to crop the image so that it only contains Rocky, not Rocky and Bullwinkle. You need to crop the image to these specific dimensions: 250px wide x 350px tall at 72ppi. <strong>Do not distort the aspect ratio.</strong> You'll need to edit the cropping tool so it is "width by height by resolution" and fill in the values you desire.</p>
+
+<p>Use the image tag to put the cropped image into the page in the "Cropping to specific pixel dimensions" section of the page.</p>
+
+<h4>Scalable vector graphics</h4>
+<p>You don't need to optimize either <code>pattern-font.svg</code> or <code>pattern-outline.svg</code> because they aren't bitmap graphics and can't be optimized. You can't even load them in Photoshop and keep them vector graphics, because Photoshop will turn them into bitmaps, which defeats the purpose. You can load them in Illustrator to edit them, but that is beyond the scope of this exercise.</p>
+
+<p>Place each SVG file in the page, and experiment with resizing it. Using the image tag for SVG is exactly the same as a bitmap, except you really do need to set the dimensions to get it the size you want it. As you resize these graphics, you'll notice that they are always crisp no matter how large or small.</p>
+
+<p>The difference between the two images is that the "font" file references the font by name, and expects it to exist on the user's hard drive. If the font isn't there, the SVG will display the default browser font (usually Times/Times New Roman). The "outlines" file has converted the font to a vector, so it is no longer type, but rather a shape, so the file is larger, but it doesn't rely on the user having the font in question. Do you get the same font in each image? Probably not, because I chose an unusual font for this image. The lesson here: to be on the safe side, SVG files with text in them (like a logo) should convert the font to outlines.</p>
+
+<h3>Validate your work</h3>
+<p>You should have the validator bookmarked by now. All validation errors must be fixed.</p>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>Site Files Structure</title>
+<link type="text/css" rel="stylesheet" href="http://www.criminalanimal.org/student/styles/syllabus.css">
+<meta charset="utf-8" />
+<style>
+h2 {
+font-size: 1.2em;
+border-bottom: 1px dotted black;
+}
+code {
+	font-size: 1.3em;
+	font-weight: bold;
+	color: darkred;
+}
+
+figure  {
+	padding: 12px;
+	margin-left: 0;
+	border: 1px dotted black;
+	background-color: ivory;
+}
+figcaption {
+	padding: 8px 0 4px 0;
+	font-style: italic;
+}
+
+figure img {
+	border: 1px solid #999;
+}
+
+.alert {
+	margin: 10px 0;
+	padding: 10px;
+	border: 2px solid blue;
+	background-color: #efefef;
+}
+
+</style>
+
+</head>
+<body>
+<header>
+<h1>Site Files Structure (aka Site Files Hierarchy)</h1>
+</header>
+<main>
+<article>
+<h2>How Web Sites are Structured</h2>
+<p>All the "site assets" for a web site (any html pages, images, other site content) must be saved into the site's root folder. That is because "references to external files" need to know where those files reside, and they all need to reside in the site's root folder. That way, you can create hyperlinks or display images using a pathname.</p>
+
+<p>Inside the site's root folder, web sites need "subdirectories" to organize the site assets. We will be discussing how to do this properly as we learn more about the kinds of files that will be part of our web sites. Websites are "hierarchical" structures. If your website has more than one page, it will have one or more "subdirectories" for the other pages of the site. The number of subdirectories you have depends on the breadth, depth and complexity of the site you are building.</p>
+
+<p>The hierarchical structure of your site often mirrors the structure of your primary site navigation. However, if you are building a "small" site, you don't have to create a site structure that is as complex as your navigation.</p>
+
+<h3>For Small Sites</h3>
+<p>Many of the sites that we write are "small" sites; they have limited content, and don't dig deeply into that content. When you have a small site, you do not need a separate subdirectory for each topic in your site. The screen shot of a "small" pets site shows how you can organize a small site into one nested subdirectory in the site's root folder:</p>
+<figure>
+<img src="screenshots/small-site-structure.png" alt="site structure of small site" />
+<figcaption>Screen shot of a "small" site's site file hierarchy with one subdirectory.</figcaption>
+</figure>
+
+<p>Features of a small site's organization:</p>
+<ul>
+<li>Site has a root folder with a short, descriptive name: <code>pets</code></li>
+<li>Site's homepage is <code>index.html</code>, and that homepage is directly inside the site's root folder ("at the top level of the site hierarchy").</li>
+<li>Site content is broken down into 5 pages, each about a different animal. The content is "broad" (about 5 different pets), but "shallow" (not much detail about any of the separate pets).</li>
+<li>Site has one subdirectory: <code>pages</code>. All the sub-pages about the pets go inside the <code>pages</code> directory.</li>
+</ul>
+<p>While the site will have navigation for each pet (dogs, cats, fish, rabbits, birds), the site structure only needs the <code>pages</code> subdirectory, because there is only <strong>one</strong> page for each animal.</p>
+
+<h3>For Larger Sites</h3>
+
+<p>If you create a larger, more complex site, your site files hierarchy needs to accommodate that with a series of subdirectories to organize the information. The screenshote below illustrates a different approach to a pets site, one which focuses on fewer pets, but each pet gets greater depth of information: </p>
+<figure>
+<img src="screenshots/large-site-structure.png" alt="site structure of large site" />
+<figcaption>Screen shot of a "large" site's site file hierarchy with subdirectories for each category of content.</figcaption>
+</figure>
+
+<p>Features of a large site's organization:</p>
+<ul>
+<li>Site has a root folder with a short, descriptive name: <code>pets</code></li>
+<li>Site's homepage is <code>index.html</code>, and that homepage is directly inside the site's root folder ("at the top level of the site hierarchy").</li>
+<li>Site content is broken down into 3 categories, each about a different animal. The content is "narrow" (about 3 different pets), but "deep" (several pages of information about each pet).</li>
+<li>Site has three subdirectories: <code>cats</code>, <code>dogs</code> and <code>fish</code>. All the sub-pages about each pet go inside its own subdirectory.</li>
+</ul>
+<p>The site will have navigation for each pet (dogs, cats, fish), and the site's file structure mirrors the navigation with separate subdirectories for each pet.</p>
+
+<div class="alert">
+<h3>Why does our exercise have only one page in most of the subdirectories?</h3>
+
+<p>This site has more subdirectory organization than you would normally use because I want you to learn how to write links from different subdirectories. If a project site only had one page per subdirectory, it would be "over-structured" and I would ask that you restructure it to properly reflect the site's contents.</p> 
+<p>When you create your own sites, consider the most effective and appropriate site files structure for each site. The structure you choose will depend on the content of the site in question. </p>
+</div>
+</article>
+</main>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>HTML Exercise 6 (Part II): more tables</title>
+</head>
+<body>
+
+<h1>Creating Tables</h1>
+
+<h2>Creating fancier tables</h2>
+
+<p>Because tables hold data, it's useful to label the columns and/or rows that are holding the information. That way, both the sighted viewer and the non-graphical environment understand better what the table is trying to communicate.</p>
+
+<h3>Table 1</h3>
+<p>We'll use the <code>th</code> (table header) tag to define a set of header cells in a table that contains information about HTML color names. The screenshot in this exercise will show you what your table will look like, so you can see what you're attempting to build. Build your table as follows. It will have 4 columns and 10 rows. Put a border of 1 on this table.</p>
+
+<ul>
+<li>The top row will have headers for the following information (don't forget the <code>scope</code> attribute):
+	<ul>
+		<li>Color Name</li>
+		<li>RGB Value</li>
+		<li>Hexadecimal Value</li>
+		<li>Color Swatch</li>
+	</ul>
+	</li>
+	<li>Column 1 will have the color names:
+	<ul>
+		<li>grey</li>
+		<li>silver</li>
+		<li>blue</li>
+		<li>yellow</li>
+		<li>pink</li>
+		<li>purple</li>
+		<li>orange</li>
+		<li>green</li>
+		<li>black</li>
+	</ul>
+	</li>
+	<li>Column 2 will have the RGB values of each color</li>
+	<li>Column 3 will have the hexadecimal values for each color</li>
+	<li>Column 4 will have the character entity for the non-breaking space. You'll use an inline style in that cell to put in the background color that matches color of the row you're on. Screenshot will show you how this looks.</li>
+	<li>color info:
+	<ul>
+		<li>grey: 128,128,128 (RGB) #808080 (Hex)</li>
+		<li>silver: 192, 192, 192 (RGB) #c0c0c0 (Hex) (Hex)</li>
+		<li>blue: 0, 0, 255 (RGB) #0000ff (Hex)</li>
+		<li>yellow: 255, 255, 0 (RGB) #ffff00 (Hex)</li>
+		<li>pink: 255, 192, 203 (RGB) #ffc0cb (Hex)</li>
+		<li>purple: 128, 0, 128 (RGB) #800080 (Hex)</li>
+		<li>orange: 255, 165, 0 (RGB) #ffa500 (Hex)</li>
+		<li>green: 0, 128, 0 (RGB) #008000 </li>
+		<li>black: 0, 0, 0 (RGB) #000000 (Hex)</li>
+	</ul>
+	</li>
+</ul>
+
+<p>When you are putting in the background-color, alternate using the color name, the hexidecimal and rgba(r, g, b, a) syntax for specifying a color. This gives you experience using all three.</p>
+
+<p>The purpose of the non-breaking space is to have some content in the <code>td</code> tags even though all we want to see is the background color, not any text information. You shouldn't ever have empty tags. Compare the following:<br> <code>&lt;td&gt;&lt;/td&gt;</code> (empty tag)<br><code>&lt;td&gt;&amp;nbsp;&lt;/td&gt;</code> (not empty tag). </p>
+
+<p>Why don't we put any data in the final column? Color is only presentational, so there is nothing for the non-graphical environment to "see." You won't need to put character entities in any table other than this one, because any table you make probably has data in each cell. I put this in here as an example of a legitimate use of the non-breaking space character entity.</p>
+
+<!-- build your first table here -->
+<table border="1">
+	<tr>
+	  <th>Color Name</th>
+	  <th>RGB Value</th>
+	  <th>Hexadecimal Value</th>
+	  <th>Color Swatch</th>
+	</tr>
+	<tr>
+	  <td>grey</td>
+	  <td>128, 128, 128</td>
+	  <td>#808080</td>
+	  <td style="background-color: #808080">&nbsp;</td>
+	</tr>
+	<tr>
+	  <td>silver</td>
+	  <td>192, 192, 192</td>
+	  <td>#c0c0c0</td>
+	  <td style="background-color: #c0c0c0">&nbsp;</td>
+	</tr>
+	<tr>
+	  <td>blue</td>
+	  <td>0, 0, 255</td>
+	  <td>#0000ff</td>
+	  <td style="background-color: #0000ff">&nbsp;</td>
+	</tr>
+	<tr>
+	  <td>yellow</td>
+	  <td>255, 255, 0</td>
+	  <td>#ffff00</td>
+	  <td style="background-color: #ffff00">&nbsp;</td>
+	</tr>
+	<tr>
+	  <td>pink</td>
+	  <td>255, 192, 203</td>
+	  <td>#ffc0cb</td>
+	  <td style="background-color: #ffc0cb">&nbsp;</td>
+	</tr>
+	<tr>
+	  <td>purple</td>
+	  <td>128, 0, 128</td>
+	  <td>#800080</td>
+	  <td style="background-color: #800080">&nbsp;</td>
+	</tr>
+	<tr>
+	  <td>orange</td>
+	  <td>255, 165, 0</td>
+	  <td>#ffa500</td>
+	  <td style="background-color: #ffa500">&nbsp;</td>
+	</tr>
+	<tr>
+	  <td>green</td>
+	  <td>0, 128, 0</td>
+	  <td>#008000</td>
+	  <td style="background-color: #008000">&nbsp;</td>
+	</tr>
+	<tr>
+	  <td>black</td>
+	  <td>0, 0, 0</td>
+	  <td>#000000</td>
+	  <td style="background-color: #000000">&nbsp;</td>
+	</tr>
+  </table>
+
+<h3>Table 2</h3>
+<p>This table will use table headers, rowspan, and background colors to make a visualization of a schedule. See the screenshot and emulate this as closely as you can.</p>
+
+<!-- build your second table here -->
+<table border="1">
+	<tr>
+	  <td style="background-color: lightgray; font-weight: bold;">Day of Week</td>
+	  <td style="background-color: lightgray; font-weight: bold;">Times</td>
+	  <td style="background-color: lightgray; font-weight: bold;">Classroom Assistant</td>
+	</tr>
+	<tr>
+	  <td style="background-color: lightgray; font-weight: bold;">Monday</td>
+	  <td>10:30 - 11:30am</td>
+	  <td>Jae Doe</td>
+	</tr>
+	<tr>
+	  <td style="background-color: lightgray; font-weight: bold;">Tuesday</td>
+	  <td>8:00 - 10:00am</td>
+	  <td>John Smith</td>
+	</tr>
+	<tr>
+	  <td style="background-color: lightgray; font-weight: bold;" rowspan="2">Wednesday</td>
+	  <td>12:30 - 1:30 pm</td>
+	  <td>Sally Jones</td>
+	</tr>
+	<tr>
+	  <td>3:00 - 4:00 pm</td>
+	  <td>Robin Davis</td>
+	</tr>
+	<tr>
+	  <td style="background-color: lightgray; font-weight: bold;">Thursday</td>
+	  <td>11:30 am - 12:30 pm</td>
+	  <td>Sam Roberts</td>
+	</tr>
+</table>
+
+
+<h3>Table 3</h3>
+<p>This table will have images as some of its table data. The screenshot will help you locate the content in the proper place, and communicate where table headers are being used.</p>
+
+<!-- build your third table here -->
+
+<table border="1">
+	<tr>
+	  <th><strong>Viburnum Variety</strong></th>
+	  <th><strong>Foliage</strong></th>
+	  <th><strong>Flower</strong></th>
+	  <th><strong>Fruit</strong></th>
+	</tr>
+	<tr>
+	  <td>Guelder Rose</td>
+	  <td><img src="images/guelder-rose-leaves.jpg" width="200"  alt="foliage of Guelder Rose"></td>
+	  <td><img src="images/guelder-rose-flowers.jpg" width="200"  alt="flower of Guelder Rose"></td>
+	  <td><img src="images/guelder-rose-berries.jpg" width="200" alt="fruit of Guelder Rose"></td>
+	</tr>
+	<tr>
+	  <td>Burkwood</td>
+	  <td><img src="images/burkwood-leaves.jpg"  height="200" alt="foliage of Burkwood"></td>
+	  <td><img src="images/burkwood-flowers.jpg"  height="200" alt="flower of Burkwood"></td>
+	  <td><img src="images/burkwood-berries.jpg"  height="200" alt="fruit of Burkwood"></td>
+	</tr>
+	<tr>
+	  <td>Southern Arrowwood</td>
+	  <td><img src="images/southern-arrowwood-leaves.jpg"  height="200" alt="leaves of Southern Arrowwood"></td>
+	  <td><img src="images/southern-arrowwood-flowers.jpg" height="200" alt="flower of Southern Arrowwood"></td>
+	  <td><img src="images/southern-arrowwood-berries.jpg"  height="200" alt="ruit of Southern Arrowwood"></td>
+	</tr>
+  </table>
+
+<h3>Validate your work</h3>
+<p>The border attribute will cause an error on every table that uses it, but otherwise there should be <strong>no</strong> errors.</p>
+
+
+
+</body>
+</html>

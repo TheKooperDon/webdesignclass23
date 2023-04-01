@@ -1,0 +1,52 @@
+/* PETS SITE STYLES */
+
+body {
+	background-color: aquamarine;
+}
+
+#wrapper {
+	width: 888px;
+	margin: 0 auto;
+	background-color: lightcyan;
+	border: 2px solid aqua;
+	padding: 6px;
+}
+
+#banner {
+	border: 2px solid aqua;
+	padding: 6px;
+}
+
+#sidebar {
+	float: left;
+	width: 220px;
+	padding: 8px;
+}
+
+main {
+	margin-left: 245px;
+	padding: 8px;
+}
+
+#colophon {
+	border: 2px solid aqua;
+	padding: 6px;	
+}
+
+/* HOMEPAGE STYLES */
+.home main {
+	margin-left: 0;
+  }
+.home h2 {
+	color: blue;
+  }
+
+
+/* CLEAR FLOAT */
+
+.clearfix {
+
+	clear: both;
+		
+	
+  }

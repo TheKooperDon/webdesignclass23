@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>Exercise 9: Fragments</title>
+<link type="text/css" rel="stylesheet" href="http://www.criminalanimal.org/student/styles/syllabus.css">
+<meta charset="utf-8">
+<style>
+h2 {
+font-size: 1.2em;
+}
+code {
+	color: darkred;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+</style>
+</head>
+<body>
+<h1>Web Design<br />HTML Exercise #9</h1>
+<h2>Fragments</h2>
+<h3>Focus on:</h3>
+<ul>
+<li>creating fragments for "in-page" linking
+	<ul>
+	<li>understanding the <code>id</code> attribute</li>
+	<li>naming conventions for ids</li>	
+	<li>how pathnames within anchor tag work to "jump" to a specified fragment</li>
+	</ul>
+</li>
+<li>HTML5 semantic structural elements
+	<ul>
+	<li>non-sectioning: <code>header, main, footer</code></li>
+	<li>sectioning: <code>article, section, nav, aside</code></li>
+	</ul>
+</li>
+<li>understanding the specific "specifications" for all the HTML5 semantic structural tags (<code>header, main, footer, article, section, nav, aside</code>)</li>
+<li>understanding the use of the <code>h2</code> section headings in sectioning tags (when they are required, when they are optional, when using them is a good idea for optional)</li>
+<li>embedded style sheet, element selectors</li>
+<li>the CSS <code>background-color</code> property</li>
+<li>use validators and document outline emulator to check and correct work:
+<ul>
+<li><a href="https://validator.w3.org/" target="_blank">HTML validator</a></li>
+<li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS validator</a></li>
+<li><a href="https://gsnedders.html5.org/outliner/" target="_blank">HTML5 Document Outliner</a></li>
+</ul>
+</li>
+</ul>
+
+<h3>Overview</h3>
+<p>You have two pages to mark up: <code>1-viburnums.html</code> and <code>2-pizza.html</code>. You'll need to validate them and check them in the document outliner. Screenshots of the browser presentation and the document outliner will help you with this work.</p>
+
+<p><mark>If possible, we will work in assigned pairs on this exercise during class.</mark> If that is not possible, the exercise will be done outside of class.</p>
+
+<h3>Workflow</h3>
+<p>On the <b>viburnums</b> page, you are required to put in all necessary HTML5 semantic structural tags (<code>header, main, footer, article, section, nav, aside</code>). Not all will be necessary.</p>
+
+<p>After you have put in the markup, write an embedded style sheet with styles for the sectioning tags only. The screenshots of the page and the document outliner can help you figure out whether you have done this correctly.</p>
+
+<p>Lastly, view the "on this page" submenu and create fragments in the page for each of those subtopics. You then need to use the anchor tag to create hyperlinks to the fragments you have specified in the page. This is a two-part process: firstly, use the <code>id</code> attribute to create the fragments. Then, you need to put the anchor tag into the list items in the submenu. The value you put in for the <code>href</code> attribute will cause the page to "jump" to the fragment when the hyperlink is clicked.</p>
+
+<p>Reminder: for a fragment to load at the top of the page, there needs to be more content below it; enough to fill the viewport. If your fragment doesn't load at the very top, it is because the viewport is tall enough to accommodate all the information on the page. The video recap addresses this.</p>
+
+<p>On the <b>pizza</b> page, you only need to identify and create the fragments, and fill in the <code>href</code> value for the hyperlinks in the main menu to each of the content areas in the page. Remember that the value for each <code>id</code> attribute must be unique to the page! Also, consider which tag you choose to create the fragment. The video recap addresses this.</p>
+
+<p>The page is already marked up for structure and styled, so you don't need to add any structural tags or styles to it.</p>
+
+<h3>Validation</h3>
+<p>You want to be sure you've written valid markup and valid styles. Use the online validator tools to check your work. If there are errors, <strong>read what the validator says about them</strong> and check the lines in your markup where the errors occur. Watch the validation video for reminders about how the validator works and how to make corrections. Most errors in your markup show up as several errors in the validator because of a sort of cascading effect. Once you fix an error, several of the validator errors will probably be resolved.</p>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

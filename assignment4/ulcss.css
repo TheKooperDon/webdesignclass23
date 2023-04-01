@@ -1,0 +1,15 @@
+ul.blocks{
+    list-style-type: square;
+
+}
+
+ul.numberlist{
+    list-style-type: number;
+}
+
+ol.letter{
+    list-style-type: upper-alpha;
+}
+ul.link{
+    list-style-type: none;
+}

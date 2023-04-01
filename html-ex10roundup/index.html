@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HTML5 Fun and Frolic: Semantic Structural Tags</title>
+<meta charset="utf-8">
+<style>
+	main{
+		border: 3px;
+		border-style: solid;
+		border-color: chartreuse;
+	}
+	header{
+		border: 3px;
+		border-style: solid;
+	}
+	footer{
+		border: 3px;
+		border-style: solid;
+		border-color: brown;
+	}
+	article{
+		background-color: blue;
+		
+	}
+	section{
+		background-color: blueviolet;
+	}
+	nav{
+		background-color: brown;
+	}
+	aside{
+		background-color: aqua;
+	}
+</style>
+</head>
+
+
+
+
+
+<body>
+<header id="banner">
+<h1>HTML5 Fun and Frolic</h1>
+<p>A site where the information gathers</p>
+<nav id="menu">  
+<ul>
+	<li><a href="">Home</a></li>
+	<li><a href="">HTML</a></li>
+	<li><a href="">CSS</a></li>
+	<li><a href="">Exercises</a></li>
+	<li><a href="">Projects</a></li>
+</ul>
+</nav>      
+</header>
+<main>
+
+<aside id="sidebar"> 
+	 
+<h2>HTML: HTML5 Structural Tags</h2>
+<h2>Semantic Structural Tags</h2>
+<nav>
+<ul>
+	<li><a href="#nonsection">Non-Sectioning</a></li>
+	<li><a href="#section">Sectioning</a></li>
+</ul>
+<h2>Learn More</h2>
+<ul>
+	<li><a href="">Non-Semantic Structural Tag</a></li>
+	<li><a href="">Examples of their use</a></li>
+</ul>
+</nav>
+</aside> 
+
+
+
+
+<article>
+<h2>Semantic Structural Tags</h2>
+
+<p>HTML5 has semantic structural tags to help with the logical structuring of the content of your document. Other markup languages do not have them; they are unique to HTML5, unlike most of the other tags we've learned so far. </p>
+
+<p>They give extra structure to assistive technologies and data-mining software that previous markup languages could not do. Screen readers will announce the ends of sections as they occur. Some of these structural elements also help to create a more robust document outline, although not all of them do this. All of these semantic structural tags group content into logical, semantic pieces of the page.</p>
+
+<p><strong><mark>These tags can be a challenge to learn, but you MUST learn their specifications and how to use them correctly.</mark></strong> The information below will help you learn these tags, and will also help you complete this exercise.</p>
+
+
+<section>
+<h2 id="nonsection">Non-sectioning Structural Tags</h2>
+<p>These tags add important hierarchical groupings and structure to your web pages. They do <strong>not</strong> create a new section in the document outline.</p>
+
+<h3>The <code>header</code> tag</h3>
+<p>This tag is used to group together introductory information. Your web pages will have at least one header. That header groups together the introductory content for the site: the site id, the tagline, the main menu. (This content is generally referred to as your banner or your masthead in the anatomy of a webpage.) </p>
+
+<p>You can have other headers in a page if they are needed. Those headers usually group together introductory information for a specific news story, a blog post, that kind of thing. You do not need a header to group your page name with other content. When you have a page with multiple header tags, it is usually because you have a page that is aggregating multiple, separate stories. We'll have exercises that need multiple headers, but your projects will probably not need more than one.</p> 
+
+<h3>The <code>main</code> tag</h3>
+<p>This tag groups together the page's unique primary (main) content. You would not include anything in the main that is also present on other pages (because it is unique). For instance, you wouldn't put your page's header tag inside the main, because that header is present on all other pages. </p>
+
+<p>Because the content of the main is unique, you can only have ONE main per page. Keyboard navigation will allow a user to "jump to main," so consider this as you determine what goes in your main tag.</p>
+
+<h3>The <code>footer</code> tag</h3>
+<p>This tag groups together endnote information. You all know what footers are and what they look like: basically stuff like copyright notices, contact information, site policies, social media… that is the sort of information that is considered to be "endnote" and would go in a footer. </p>
+
+<p>Most sites have a "global" footer with site-wide endnote information in addition to their "global" header with the site-wide introductary information. While all our sites will have headers, it is fine to have sites without footers if the site simply has no endnote information. Footers do tend to anchor the page and give a sense of the content having come to an end, however.</p>
+
+<p>Like headers, a page can have multiple footers. Like multiple headers, multiple footers usually relate to separate, unrelated stories that are aggregated into a page. Things like tags, categories, etc show up in blog or news story footers.</p> 
+</section>
+<section>
+<h2 id="section">Sectioning Structural Tags</h2>
+
+<p>When you put the following "sectioning" tags in your markup, they create a new section in the document outline. Previous to learning these, we had only one section in the document outline: the document's root section (the <code>body</code> tag creates the root section).</p>
+
+<p>Because these tags create a new section in the outline, using heading tags gives the new sections titles in the document outline. Some of these sectioning tags require a section heading, and some of them are optional.</p>
+
+
+<h3>The <code>article</code> tag</h3>
+<p>Specifies independent, self-contained content. An article is a “complete object” (don’t confuse it with publishing jargon, although the element is often used that way).  Apply the “syndication” criterion: could the content were to be part of an RSS feed away from its page and still be complete? If "yes," use article.</p>
+
+<p>article  is commonly used for:</p>
+
+<ul>
+	<li>primary content of the page (for ordinary webpages that are not news/blogs)</li>
+	<li>blog posts</li>
+	<li>news stories</li>
+</ul>
+
+<p>In websites that consist of one page with different content (that the interface usually scrolls to after the user clicks on an item in the menu), that different content would go in an article, not a section. That is because each of those pieces of information are considered stand-alone; they could, in fact, have their own page in the site, even though they do not. We'll have an exercise that demonstrates this. However, most pages have only one article in them, unless they are aggregating separate news stories or blog posts.</p>
+
+<p>Every page of your project websites will have an article in it: it will go inside the main, and often refer to identical content as the main. The main is the unique main content of the page, and the article is the complete, stand-alone content that could be syndicated. You will not be creating any one-page sites, or aggregations of news stories/blog posts. However, we’ll do exercises that have such content so you can see how to structure pages in these situations.</p>
+
+<p>The article tag <strong>requires</strong> a section heading (an <code>h2</code> tag).</p>
+
+<h3>The <code>section</code> tag</h3>
+
+<p>This is the most "generic" of the sectioning tags.  A section is used to group thematically-related information together, but is incomplete in and of itself. It needs the other thematically-related information to be complete. For instance, in a page with a lot of content broken down into subtopics, those subtopics could be structured as sections – basically, subsections of the content. A section would be incomplete if it were syndicated.</p>
+
+<p>If you use section tags, they will probably be nested inside a longer article. The article is the complete information, and the section tags break it down into subsections. You only need to do this if the article content is long; otherwise just use heading tags (probably h3) for subtopics in the article. It's likely that your project sites won't need to use sections, but we'll use them in exercises so you can learn what they are for.</p>
+
+<p>The section tag <strong>requires</strong> a section heading (an <code>h2</code> tag).</p>
+
+
+<h3>The <code>nav</code> tag</h3>
+<p>This tag groups together a navigational system in your site. The hyperlinks in a nav must be to pages within your site, not to external websites. A nav  represents a structural system of navigation within the site.</p>
+
+<p>Not all hyperlinks go in a nav tag. Links within text are obviously not “navigation” in a structural sense, nor are pages of hyperlinks as a resource to other websites, or search results, nor are hyperlinks to social media. You might create a structure of navigation (using lists) to social media, but because it doesn't navigate the site itself, it is not nav. </p>
+
+<p>The nav tag does not require a section heading. It is <strong>optional</strong>. If you use one, use an <code>h2</code> tag.</p>
+
+<h3>The <code>aside</code> tag</h3>
+<p>This is for content that is tangentially-related to the content in proximity to the aside. The aside could be tangentially-related to the entire page, or to a section or article, perhaps, depending on how the page is structured. It would be considered tangentially related to its "parent sectioning tag." An aside can also be considered separately from the content, although it is incomplete in an of itself, and needs its related content to make sense. You could not syndicate an aside.</p>
+
+<p>Printed “sidebars” in a book offer a good analogy. It is understood as something that is related to, but stands apart (or aside) from the main page content.</p> 
+
+<p>commonly used for:</p>
+<ul>
+	<li>groups of nav tags (as subnavigation, for instance)</li>
+	<li>pull-quotes from page content (not a blockquote)</li>
+	<li>sidebars</li>
+	<li>advertising</li>
+</ul>
+
+<p>We will probably use the aside element most often for sidebar navigation. In the layout, it is usually designed as a column in the overall design. In a sidebar of subnavigation, you would use the aside tag, and then as many nav tags as appropriate. </p>
+
+<p>The aside tag does not require a section heading. It is <strong>optional</strong>. If you use one, use an <code>h2</code> tag.</p>
+
+</section>
+</article>	
+</main>	
+<footer id="colophon">
+
+
+
+
+<p>&copy; 2021 HTML Exercises R Us</p>
+<ul>
+	<li><a href="">Home</a></li>
+	<li><a href="">HTML</a></li>
+	<li><a href="">CSS</a></li>
+	<li><a href="">Exercises</a></li>
+	<li><a href="">Projects</a></li>
+</ul>
+<p>Follow us</p>
+<ul>
+	<li><a href="">Facebook</a></li>
+	<li><a href="">Instagram</a></li>
+	<li><a href="">Twitter</a></li>
+</ul>
+
+<address>Contact: the-boss@html.com</address>
+
+
+
+
+</footer>
+</body>
+</html>

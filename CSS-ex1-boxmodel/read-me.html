@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>CSS Exercise 1: Box Model</title>
+<link type="text/css" rel="stylesheet" href="http://www.criminalanimal.org/student/styles/syllabus.css">
+<meta charset="utf-8">
+<style>
+h2 {
+font-size: 1.2em;
+}
+code {
+	color: darkred;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+</style>
+</head>
+<body>
+<h1>Web Design<br />CSS Exercise 1: Box Model</h1>
+<h2>CSS "Box Properties"</h2>
+<h3>Focus on:</h3>
+<ul>
+<li>CSS box properties: <code>padding, border, margin</code></li>
+<li>CSS background property: <code>background-color</code></li>
+<li>embedded style sheet</li>
+<li>use validators to check and correct work:
+<ul>
+<li><a href="https://validator.w3.org/" target="_blank">HTML validator</a></li>
+<li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS validator</a></li>
+</ul>
+</li>
+</ul>
+
+<h3>Overview</h3>
+<p>Use the <code>padding, border, margin, background-color</code> properties to style specific elements in the markup. <code>cats.html</code> needs only background-color, padding and border. <code>dogs.html</code> needs background-color, padding, border and margin. <code>fish.html</code> needs background color, margin and padding.</p>
+
+<h3>Workflow</h3>
+<p>You do not need to add any markup to the document other than the <code>style</code> tag for the embedded style sheets. Write styles using element selectors to style the page. You may use any colors you like, but emulate the appearance and location of padding, borders and margins as closely to the screenshots as possible.</p>
+
+<p><mark>Read each of the separate page instructions <strong>carefully</strong>. They tell you pretty much exactly what to do.</mark></p>
+
+<h4>Cats page</h4>
+<p>You will need write styles using the following element selectors: <code>body, header, footer, aside</code>. Of course there are many more tags in the page, but we don't always style every tag ;-). You need  to use background-color, padding and border properties only. <strong>Do not use margin in this layout.</strong> Pay close attention to the screenshot. The border and padding are only on one side of the aside's display box.  The footer is equally padded on all four sides.</p>
+
+<p>Remember that padding and borders have the <em>potential</em> to make the display box "boxy" and change where the margin calculates from and whether it "collapses" or not. Only one display box in this layout is "boxy." Can you tell by looking at the screenshot which display box this is?</p>
+
+<h4>Dogs page</h4>
+<p>You will need write styles using the following element selectors: <code>body, header, main, footer, article, nav</code>. Of course there are many more tags in the page, but we don't always style every tag ;-). You need to use background-color, padding, border and margin properties. Pay close attention to the screenshot.  </p>
+
+<p>This page is more complicated. The <code>header, main, footer, article</code> have all been made "boxy" so margins don't collapse and calculate from tops and bottoms of ancestor display boxes rather than adjacent elements with margins in the layout. border and padding are the properties that make the display boxes "boxy."  </p>
+
+<p>In this layout, margin is only used on the <code>main</code>; every other interval you see is created with padding. Can you tell where the margins on the main are? They are not equal on all four sides. Top and bottom have the same amount of margin. The left has more. The right has no margin.</p>
+
+<h4>Fish Page</h4>
+<p>This page gets rid of default padding and default margins. Sometimes you need to either eliminate or alter the browser default box properties. It's important to know which elements use these properties for their default display so if you don't want them, you can get rid of them. </p>
+
+<p>You need background colors in <code>header, main, footer, aside, nav, body</code>; nothing is needed for the <code>article</code>. You must get rid of the margin on the <code>body.</code>. You must get rid of the padding and margin on the <code>ul</code>. You must get rid of the margin on the heading tags.</p>
+
+<p>The only tag in this design that keeps its default margin is the paragraph tag. You can see it between the site id and the tagline, and between the tagline and the main menu. You can also see it in the article, between the page name and the separate paragraphs of text. Lastly, you can see it as an interval between the end of the main and the beginning of the footer (the body background color shows here). That is because the footer is laid out underneath the margin in the final paragraph of the article, which is inside the main.</p>
+
+<p><strong>Don't ever get rid of the margin on the paragraph tag</strong>. If you do, you no longer have visible paragraphs. That is why I left it in this page. In your real sites, you will often zero out or change margin and/or padding on the body, heading tags and lists. But never on paragraphs.</p>
+
+<p><strong>Where did the list bullets go?</strong> They are displaying off the page because there is no more padding on the left of the list. They are there, but you can't see them. ;-) </p>
+
+<h3>Validation</h3>
+<p>You want to be sure you've written valid markup and valid styles. Use the online validator tools to check your work. If there are errors, <strong>read what the validator says about them</strong> and check the lines in your markup where the errors occur. 
+
+
+
+
+
+
+
+
+
+</body>
+</html>

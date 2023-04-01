@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>CSS Exercise 4: Float Layout 1</title>
+<link type="text/css" rel="stylesheet" href="http://www.criminalanimal.org/student/styles/syllabus.css">
+<meta charset="utf-8" />
+<style>
+h2 {
+font-size: 1.2em;
+}
+code {
+	color: darkred;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+</style>
+</head>
+<body>
+<h1>Web Design<br />CSS Exercise 4: Float Layout</h1>
+<h2>Two-column float layout</h2>
+<h3>Focus on:</h3>
+<ul>
+<li>using <code>float</code> property</li>
+<li>creating 2-column layout using float</li>
+<li>id selectors</li>
+<li>layout of a typical web page</li>
+<li>use validators to check and correct work:
+<ul>
+<li><a href="https://validator.w3.org/" target="_blank">HTML validator</a></li>
+<li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS validator</a></li>
+</ul>
+</li>
+</ul>
+
+<h3>Overview</h3>
+<p>Use the <code>float</code> property to create a two-column layout. Be aware of collapsed containers. When you design your sites, and you use one external style sheet, you'll need to anticipate possible collapsed containers by using either the clearfix or the overflow fixes. In these designs, you'll use clearfix.</p>
+
+<p>You will use id selectors to style your wrapper, banner, sidebar and colophon. You'll use an element selector to style your main. You'll use a class selector for the clearfix that will fix the collapsed container.</p>
+
+<p><strong><mark>Important:</mark></strong> you must use the selectors specified above. Do NOT use element selectors except to style the main. You will be using an embedded style sheet.</p>
+
+<h3>Workflow</h3>
+
+<h4>All pages</h4>
+<p>The semantic structural tags are complete, but you will need to add a <code>div</code> to each page so that you can create a fixed-width centered layout.</p>
+
+<p>You also need to add the proper ids to the layout elements: banner, sidebar, menu, colophon. Our PDF lecture notes have more details about this. These ids let you use id selectors to style the "big picture" layout more easily.</p>
+
+<p>The live space in each layout is 990px. The sidebar is 320px wide, and the interval between the sidebar and the main is 15px. Remember how to get the appearance of two side-by-side columns! Margin does the trick. The video tutorials should help you with this. (note: there is no reason to ever use this layout in your designs; it is far too narrow)</p>
+
+<p>Also take note: when you float an element, the box becomes "boxy" and the margin in the h2 tag calculates from the edge of the box, not from the element above it in the layout. Why? Because the floated element has left the normal flow, so there *is* nothing above it in the layout to calculate from. You'll see that in the screen shots. Normally you'd correct for that but I left it in so you could see it.</p>
+
+<h4>Cats page</h4>
+<p>You will float the sidebar to the left.</p>
+
+<p>Use a border in the banner and the colophon. Use a background color in the body, wrapper, sidebar and main. Choose whatever colors you like.</p>
+
+<h4>Dogs page</h4>
+<p>You will float the sidebar to the left.</p>
+
+<p>You'll have a collapsed container. The best solution in this instance is to use the clearfix class in the colophon. In a real website, you'd put that class on every page, even if you did not need it, because it makes it possible to adjust your content and not worry that your layout will break because of a collapsed container.</p>
+
+<p>Use a border in the banner and the colophon. Use a background color in the body, wrapper, sidebar and main. Choose whatever colors you like.</p>
+
+<h4>Fish Page</h4>
+<p>You will float the sidebar to the right.</p>
+
+<p>Use a background color in the body, the wrapper, the banner, the sidebar, the main, the colophon.</p>
+
+
+<h3>Validation</h3>
+<p>You want to be sure you've written valid markup and valid styles. Use the online validator tools to check your work. If there are errors, <strong>read what the validator says about them</strong> and check the lines in your markup where the errors occur. 
+
+
+
+
+
+
+
+
+
+</body>
+</html>

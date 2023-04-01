@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" >
+<title>HTML Exercise 5 Part II: Using figure and figcaption</title>
+</head>
+<body>
+
+<h1>Using <code>figure</code> and <code>figcaption</code></h1>
+<p>Usually a <code>figure</code> is an image, illustration, diagram, code snippet, etc., that is referenced in the main flow of a document, but that can be moved to another part of the document or to an appendix without affecting the content.</p>
+
+<p>Most images in your sites will not need the <code>figure</code> and <code>figcaption</code> tags. While the <code>figcaption</code> tag isn't required for the <code>figure</code> tag, it is useful to ask yourself if you will be captioning the image. If you are, perhaps it should be considered "information-bearing."</p>
+
+<p>A few things to help you make the decision:</p>
+
+<ul>
+	<li>Does the image "work" irrespective of its location in the page? Does its content (with or without caption) stand alone without the page text for context? If yes; consider <code>figure</code>.</li>
+	<li>Do you refer to the image in your page's content? Example: "As you can see in this picture, the breed standard for poodles blah blah blah..." This suggests your poodle image is also information-bearing (what the breed standard looks like, not just a cute poodle picture).</li>
+	<li>Do you desire a caption? If so, use <code>figure</code> and <code>figcaption</code>.</li>
+</ul>
+
+<p>Never use <code>figure</code> for the following:</p>
+<ul>
+	<li>icons</li>
+	<li>site navigation images</li>
+	<li>logos/site id graphics (unless you are using it as an illustration of a logo: "This is the original Coca-Cola logo")</li>
+	<li>Images or illustrations that must be in a particular location in the page, such as step-by-step instructions.</li>
+</ul>
+
+<h2>Visual Representation of Data</h2>
+<!-- place the image of the pie chart in this page, and use the appropriate tags to mark it up as a figure, with a caption. Be sure you use the required attributes in your image element so it is usable. The caption is the second paragraph on this page; replace the paragraph with the proper tag for the caption. 
+
+In addition, please link to the Wikipedia page about English Speaking Countries from the pie chart graphic (you are making the image a clickable link)
+-->
+<figure>
+<a href="https://en.wikipedia.org/wiki/List_of_dialects_of_English">
+<img src="images/english-dialects.png" alt="a pie chart to explain the % of dialects"> 
+</a>
+<figcaption>Pie chart showing the relative numbers of native English speakers in the major English-speaking countries of the world.</figcaption>
+</figure>
+
+<p>Approximately 375 million people speak English as their first language. English today is probably the third largest language by number of native speakers, after Mandarin Chinese and Spanish. However, when combining native and non-native speakers it is probably the most commonly spoken language in the world, though possibly second to a combination of the Chinese languages (depending on whether or not distinctions in the latter are classified as "languages" or "dialects").</p>
+
+<p>Anglosphere is a neologism that refers to those nations with English as the most common language. The term can be used more specifically to refer to those nations which share certain characteristics within their cultures based on a linguistic heritage, through being former British colonies. In particular, this includes the United Kingdom, from where the language originates, Australia, Canada (except Quebec), New Zealand, Ireland and the United States.</p>
+
+
+<h2>Image Relating to Specific Content</h2>
+<figure>
+<!-- place the portrait photo of Chancellor Mone in the page. The first paragraph represents the caption; put it in its proper tag and proper place in the markup. -->
+<img src="images/chancellor-mone.jpg" alt="a portrait pic of the UWM chancellor">
+<figcaption>Dr. Mark Mone, Chancellor of UWM since 2014</figcaption>
+</figure>
+
+
+
+<p>Mark Mone was appointed Chancellor of the University of Wisconsin-Milwaukee in 2014.</p>
+
+<p>He has put the University on a strategic course for strengthened student success, research, partnerships, entrepreneurship and innovation while managing unprecedented challenges facing higher education, and the consolidation of two regional campuses into branch campuses of UWM.</p>
+
+<p>Dr. Mone has taken a leading role in the M7 Regional Talent Partnership to increase the number of college graduates to address the growing need for highly-skilled talent in the state. Chancellor Mone has positioned UWM to address societal issues through strategic re-invention and research and collaboration. He co-leads the M-cubed – a critical initiative of the three major public education institutions in Milwaukee that together serve more than 140,000 students – to close the achievement gap. Dr. Mone is the co-founder of the Higher Education Regional Alliance.</p>
+
+<h2>Not a <code>figure</code></h2>
+<h3>Chancellor's Update: Planning Our Future</h3>
+<p>The "header" image in this page heads up <strong>all</strong> the messages from the Chancellor's Office. It is not an information-bearing graphic.</p>
+<img src="images/chancellor-header.jpg" alt="a cool looking banner with the chancellor that he uses for emails">
+<!-- insert the chancellor's header image here -->
+
+<p>Dear UWM Faculty and Staff,<br >
+I hope your start of the fall semester is going well. This is many peoples’ favorite time of the year, and it certainly is mine, with all the renewed energy and focus on students that accompany a new school year.</p>
+
+<p>This new biennium brings with it many positive developments: state appropriations are increasing, we will be implementing a 2%/2% compensation plan, and UWM received $192M in the capital budget which includes construction of a new chemistry building. I’ll soon be sharing encouraging news on the Freshwater Collaborative of Wisconsin, an alliance among all UW campuses to address water challenges, that UWM is leading. On August 30, Governor Tony Evers toured UWM’s School of Freshwater Sciences to learn more about the project, which is under consideration by the state for $27.6M over three budget cycles. I have also participated in many meetings with legislators in recent months, with more lined up to advocate for resources and support. And on Sept. 12, we will be celebrating the finale of UWM’s largest comprehensive campaign, “Made in Milwaukee, Shaping the World”, with the announcement of our final campaign total.</p>
+
+</body>
+</html>

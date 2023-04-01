@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Text Wrap With float</title>
+<style>
+body {
+	background-color: #efefef;
+}
+
+#wrapper {
+	width: 982px;
+	margin: 0 auto;
+	padding: 12px;
+}
+
+main, header {
+	background-color: white;
+	border: 2px solid green;
+	padding: 16px;
+	margin-bottom: 20px;
+
+}
+
+/* put your new styles below for the exercise */
+.featured-image {
+	float: left;
+	padding: 4px;
+	border: 2px solid green;
+	margin-right: 12px;
+}
+
+.clearfix {
+	clear: both;
+	
+}
+main {
+	overflow: auto;
+}
+section {
+	padding: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<header>
+<h1>Viburnums</h1>
+<p>Flowering Shrubs for the Landscape and the Birds</p>
+
+<nav>
+<h2>Table of Contents</h2>
+<ul>
+<li>Overview</li>
+<li>Cultural Requirements</li>
+<li>Propagation</li>
+<li>Description</li>
+<li>Foliage</li>
+<li>Flowers</li>
+<li>Fruit</li>
+</ul>
+</nav>
+
+</header>
+
+<main>
+<article>
+<h2>All About Viburnums</h2>
+<section>
+<h2>Overview</h2>
+<img src="images/viburnum-overview.jpg" alt="viburnum foliage and flowers">
+<p>Viburnums have long been one of the most popular flowering landscape shrubs. There are over 150 species of Viburnum. You can find a variety to suit any garden need: wet or dry, sun or shade, natural or formal, shrub or tree, native or exotic, USDA Zones 2-9. Bloom times span early spring through June and are followed by attractive fruit and outstanding fall foliage.</p>
+</section>
+<!-- /overview -->
+
+<section>
+<h2>Cultural Requirements</h2>
+<p>Most viburnums prefer full sun but will adjust to partial shade. They like a moderately fertile soil with a pH between 5.6 - 6.6., although many do just fine in alkaline soils. In general, viburnums are not terrible particular about where they grow.</p>
+<figure>
+<img src="images/hardiness-map.png" alt="hardiness map of Wisconsin">
+<figcaption>Hardiness map of Wisconsin</figcaption>
+</figure>
+<p>That few pests will bother viburnums is one of the reasons they have become so popular in the landscape. Recently the Viburnum Leaf Beetle (VLB) has been introduced into North America trough Canada and has begun making its way south.</p>
+</section>
+<!-- /cultural requirements -->
+
+<section class="clearfix">
+<h2>Foliage</h2>
+<img src="images/viburnum-foliage.jpg" alt="viburnum foliage" class="featured-image">
+<p>There is no singular viburnum foliage. It can be rounded, lance-shape or toothed, smooth, velvety or rough. There are some evergreen and semi-evergreen varieties and many deciduous varieties with outstanding fall color.</p>
+<p>Most viburnum bushes are deciduous, which means they will drop their leaves each fall. Their growth rate should increase after the first year. Most shrubs and perennials will not grow significantly the first year they are planted; at least there won't be much visible growth.</p>
+</section>
+<!-- /foliage -->
+
+<section class="clearfix">
+<h2>Flowers</h2>
+<img src="images/viburnum-flower.jpg" alt="viburnum flowers" class="featured-image"/>
+<p>Most viburnums have either white or pinkish flowers which are sometimes fragrant. The flowers themselves come in three major types: 1) Flat clusters of florets, 2) Flat umbels outlined with larger flowers, resembling lacecap hydrangeas and 3) Dome-shaped, snowball like clusters.</p>
+<p>The fragrant varieties that are most familiar in the landscape are native to Asia.</p>
+<p>Most viburnums flower in spring. The sometimes-fragrant flowers range from white and cream to pink-flushed or wholly pink. They are borne in terminal or axillary panicles, clusters, corymbs, or cymes, which are often spherical or domed. Some species have blooms similar to the flattened heads of lacecap hydrangeas.
+</p>
+</section>
+<!-- /flowers -->
+
+<section class="clearfix">
+<h2>Fruit</h2>
+<img src="images/viburnum-fruit.jpg" alt="viburnum fruit" class="featured-image"/>
+<p>Almost all viburnums produce attractive clusters of drupes type fruits which are popular with birds, wildlife and humans. However, most Viburnums are not self-pollinating and will require another variety to cross-pollinate with and yield fruit. Read more on Asian and Evergreen Viburnums and Native North American varieties.</p>
+<p>Many species bear ornamental fruits in late summer or fall. They are usually spherical or ovoid and may be red, yellow, blue, or black.
+</p>
+</section>
+<!-- /fruit -->
+
+</article>
+</main>
+</div>
+</body>
+</html>

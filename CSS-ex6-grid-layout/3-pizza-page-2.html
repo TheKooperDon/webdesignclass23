@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Columns using CSS grid (pizza 2)</title>
+<style>
+body {
+	margin: 0;
+}
+
+.wrapper {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#banner {
+	padding: 10px 0;
+background-color: silver;
+}
+
+main {
+padding: 20px 0;
+}
+
+#colophon {
+padding: 10px;
+
+}
+
+/* MENU */
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#menu li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+#menu a {
+	display: inline-block;
+}
+
+/* two column layout */
+
+
+
+/* three column layout */
+
+
+
+
+/* background rows */
+
+
+
+/* misc */
+
+.pizza-feature {
+	width: 100%;
+	border: 2px solid gray;
+}
+
+h2{
+	margin-top: 0
+}
+
+</style>
+</head>
+
+<body>
+
+<header id="banner">
+<div class="wrapper">
+<h1>CSS <code>grid</code> for Layout</h1>
+<nav id="menu">
+<ul>
+<li><a href="">Home</a></li>
+<li><a href="">Our Story</a></li>
+<li><a href="">Menu</a></li>
+<li><a href="">Pizza</a></li>
+<li><a href="">FAQs</a></li>
+<li><a href="">Press</a></li>
+<li><a href="">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main>
+<article>
+<div class="wrapper">
+<h2 class="page-name">Using <code>grid</code> to create layouts</h2>
+<p>Restructuring the Wy'east pizza page as shortcuts to different pages in a hypothetical website with CSS grid. You might do this but not use sections, depending on the semantics. It could be just divs to separate the content into columns. Really depends on what is in your page. Don't get hung up on <strong>this</strong> structure. Instead, let the semantics of <strong>your page's content</strong> be the guide.</p>
+</div>
+
+
+<div class="wrapper">
+
+<section>
+<h2>Learn About Our History!</h2>
+<p>James and Ann started making pizza in a camper trailer on the side of the road in Portland, Oregon. Over a four year period we learned how to make great pizza and build a loyal following. We have always loved time spent in outdoor environments and have hiked and camped extensively through the Appalachian and Cascade mountain ranges. The name Wy’east comes from the native name for the mountain we now call Mt. Hood, Portland’s namesake mountain and the source of much of our inspiration. We moved back to our hometown Milwaukee Wisconsin in 2013 so that our families could eat our pizza too.</p>
+<p><a href="">Read More</a></p>
+</section>
+
+<section>
+<h2>Learn About Our Pizza!</h2>
+<p>A very hot oven and a long fermented dough are the essential ingredients for a great pizza. We honor age old bread baking traditions, so naturally the dough is the most highly regarded component of our pizza. Our crust is thin with an outer edge that puffs up and shows its bread like structure. This edge is the cornicione, it is the result of the long fermentation and hand stretching process. The pies are baked quickly so that they do not dry out but get crispy and slightly charred in all the right places. This char is a natural product of carmelizing sugars in the dough released from it’s long fermentation and the extreme heat of the oven. Char, and the flavor contrasts it provides are highly sought after by both pizzaiolo’s and critics alike.</p>
+<p><a href="">Read More</a></p>
+</section>
+</div> <!-- /.wrapper -->
+
+
+<section>
+<div class="wrapper">
+<h2>Menu</h2>
+
+
+<h3>Seasonal Special</h3>
+<p>A rotating white pizza that highlights seasonal vegetables, fresh herbs, and specialty cheeses from local purveyors whenever possible. No additions or substitutions.</p>
+ 
+<h4>Orion</h4>
+<p>White pie with mozz, fontina, parmigiano reggiano, and  roasted red onion and garlic</p>
+
+<h3>Red Pies</h3>
+<p>Base of tomato sauce, shredded mozzarella, pecorino cheese and herbs.</p>
+
+<h4>Hogsback</h4>
+<p>Sausage and red onion</p>
+
+<h4>Three Sisters</h4>
+<p>Fresh mushroom, fresh garlic, and basil</p>
+
+<h4>Hot Marmot</h4>
+<p>Pepperoni, fresh garlic, Mama Lil's sweet hot peppers</p>
+
+<h4>Loowit</h4>
+<p>Green olives and Mama Lil's sweet hot peppers</p>
+
+<h4>Zig-Zag</h4>
+<p>Soppressata and nicoise olives</p>
+
+<h4>Margharita</h4>
+<p>Fresh mozzarella and basil</p>
+
+<h3>White Pies</h3>
+<p>Base of olive oil, shredded mozzarella, ricotta, and pecorino cheeses, and herbs</p>
+
+<h4>Cloud Cap</h4>
+<p>Fresh mushroom, roasted garlic, fresh rosemary</p>
+
+<h4>Cape Blanco</h4>
+<p>Fresh garlic, sausage, cracked pepper</p>
+
+<h4>Ring of Fire</h4>
+<p>Bacon, sport peppers, fontina cheese, finished with honey</p>
+</div><!-- /.wrapper -->
+</section>
+
+
+
+<section>
+<div class="wrapper">
+<h2>Check out these pies!</h2>
+
+<img src="images/pizza2.jpg" alt="pizza" class="pizza-feature">
+<h4>Hogsback</h4>
+<p>Sausage and red onion</p>
+
+<img src="images/pizza9.jpg" alt="pizza" class="pizza-feature">
+<h4>Three Sisters</h4>
+<p>Fresh mushroom, fresh garlic, and basil</p>
+
+<img src="images/pizza6.jpg" alt="pizza" class="pizza-feature">
+<h4>Hot Marmot</h4>
+<p>Pepperoni, fresh garlic, Mama Lil's sweet hot peppers</p>
+
+<img src="images/pizza8.jpg" alt="pizza" class="pizza-feature">
+<h4>Loowit</h4>
+<p>Green olives and Mama Lil's sweet hot peppers</p>
+
+<img src="images/pizza7.jpg" alt="pizza" class="pizza-feature">
+<h4>Zig-Zag</h4>
+<p>Soppressata and nicoise olives</p>
+
+<img src="images/pizza1.jpg" alt="pizza" class="pizza-feature">
+<h4>Margharita</h4>
+<p>Fresh mozzarella and basil</p>
+</div><!-- /.wrapper -->
+</section>
+
+</article>
+</main>
+
+<footer id="colophon">
+<div class="wrapper">
+<address>
+5601 W. Vliet Street<br />
+Milwaukee, WI 53208
+</address>
+</div>
+</footer>
+
+
+</body>
+</html>

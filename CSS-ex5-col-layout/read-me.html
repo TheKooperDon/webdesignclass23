@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>CSS Exercise 5: Columns Layout</title>
+<link type="text/css" rel="stylesheet" href="http://www.criminalanimal.org/student/styles/syllabus.css">
+<meta charset="utf-8" />
+<style>
+h2 {
+font-size: 1.2em;
+}
+code {
+	color: darkred;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<header id="banner">
+<h1>Web Design<br />CSS Exercise 5</h1>
+</header>
+
+<main>
+<article>
+<h2>Basics of using CSS columns in a layout</h2>
+
+<h3>Focus on</h3>
+<ul>
+<li><code>column-count</code></li>
+<li><code>column-gap</code></li>
+<li><code>column-rule</code></li>
+<li>non-semantic grouping tag (<code>div</code>)</li>
+</ul>
+
+
+<p>CSS columns work a lot like columns in a text book or other pring publication: they flow content from the left-most column to the right-most column, automatically breaking up the contents so the columns are equal height.</p>
+
+<p>When there are images in the content, the way in which the browser divides up the content into columns depends on how the images will "flow" - obviously they can't be broken in the middle. You can control how the browser will put in breaks with <code>break-before</code> or <code>break-after</code> properties. These are not needed in this exercise. There are other ways to control content and layout with columns (see lecture notes for resources)</p>
+
+<p>One useful style when you're working with columns (and later, with CSS grid) is using the feature-image class to set the width of images to 100%. That way, they are always the width of their container, even if that width changes.</p>
+
+<p>Be sure that you read the columns lecture notes, and view the video tutorials.</p>
+
+<p>There is a screenshot of our goal, and we'll do this in class, so you should be able to finish it up quickly.</p>
+
+
+</article>
+</main>
+</div>
+</body>
+</html>

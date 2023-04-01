@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="207px" height="207px" viewBox="0 0 207 207" enable-background="new 0 0 207 207" xml:space="preserve">
+<pattern  x="-202" y="500" width="78.741" height="68.194" patternUnits="userSpaceOnUse" id="Diamond_Cubes" viewBox="6.56 -79.558 78.741 68.194" overflow="visible">
+	<g>
+		<polygon fill="none" points="6.56,-11.363 85.301,-11.363 85.301,-79.558 6.56,-79.558 		"/>
+		<g>
+			<polygon fill="none" points="6.561,-79.559 6.561,-11.363 85.302,-11.363 85.302,-79.559 			"/>
+			<polygon fill="none" points="85.302,-11.363 85.302,-79.559 6.561,-79.559 6.561,-11.363 			"/>
+			<polygon fill="#D3CAB7" points="45.932,-34.096 39.369,-45.463 26.247,-45.463 32.807,-34.096 			"/>
+			<polygon fill="#D3CAB7" points="45.932,-56.828 39.369,-68.193 26.247,-68.193 32.807,-56.828 			"/>
+			<polygon fill="#D3CAB7" points="65.616,-68.193 59.054,-79.559 45.932,-79.559 52.493,-68.193 			"/>
+			<polygon fill="#D3CAB7" points="65.616,-45.463 59.054,-56.826 45.932,-56.826 52.493,-45.463 			"/>
+			<polygon fill="#D3CAB7" points="26.247,-68.193 19.685,-79.559 6.561,-79.559 13.123,-68.193 			"/>
+			<polygon fill="#D3CAB7" points="26.247,-45.463 19.685,-56.826 6.561,-56.826 13.123,-45.463 			"/>
+			<polygon fill="#D3CAB7" points="45.932,-11.365 39.369,-22.732 26.247,-22.732 32.807,-11.365 			"/>
+			<polygon fill="#D3CAB7" points="65.616,-22.73 59.054,-34.096 45.932,-34.096 52.493,-22.732 			"/>
+			<polygon fill="#D3CAB7" points="85.302,-34.096 78.74,-45.463 65.616,-45.463 72.178,-34.096 			"/>
+			<polygon fill="#D3CAB7" points="85.302,-56.828 78.74,-68.193 65.616,-68.193 72.178,-56.828 			"/>
+			<polygon fill="#D3CAB7" points="85.302,-11.365 78.74,-22.732 65.616,-22.732 72.178,-11.365 			"/>
+			<polygon fill="#D3CAB7" points="26.247,-22.732 19.685,-34.096 6.561,-34.096 13.123,-22.732 			"/>
+			<polygon fill="#8C95AC" points="26.247,-22.732 19.685,-34.096 26.247,-45.463 32.807,-34.096 			"/>
+			<polygon fill="#8C95AC" points="26.247,-45.463 19.685,-56.828 26.247,-68.193 32.807,-56.828 			"/>
+			<polygon fill="#8C95AC" points="26.247,-68.193 19.685,-79.559 26.247,-90.924 32.807,-79.559 			"/>
+			<polygon fill="#8C95AC" points="45.932,-56.828 39.369,-68.193 45.932,-79.559 52.493,-68.193 			"/>
+			<polygon fill="#8C95AC" points="45.932,-34.096 39.369,-45.463 45.932,-56.826 52.493,-45.463 			"/>
+			<polygon fill="#8C95AC" points="6.561,-56.828 0,-68.193 6.561,-79.559 13.123,-68.193 			"/>
+			<polygon fill="#8C95AC" points="6.561,-34.096 0,-45.463 6.561,-56.826 13.123,-45.463 			"/>
+			<polygon fill="#8C95AC" points="26.247,0 19.685,-11.365 26.247,-22.732 32.807,-11.365 			"/>
+			<polygon fill="#8C95AC" points="45.932,-11.365 39.369,-22.732 45.932,-34.096 52.493,-22.732 			"/>
+			<polygon fill="#8C95AC" points="65.616,-22.732 59.054,-34.096 65.616,-45.463 72.178,-34.096 			"/>
+			<polygon fill="#8C95AC" points="65.616,-45.463 59.054,-56.828 65.616,-68.193 72.178,-56.828 			"/>
+			<polygon fill="#8C95AC" points="65.616,-68.193 59.054,-79.559 65.616,-90.924 72.178,-79.559 			"/>
+			<polygon fill="#8C95AC" points="85.302,-56.828 78.74,-68.193 85.302,-79.559 91.864,-68.193 			"/>
+			<polygon fill="#8C95AC" points="85.302,-34.096 78.74,-45.463 85.302,-56.826 91.864,-45.463 			"/>
+			<polygon fill="#8C95AC" points="65.616,0 59.054,-11.365 65.616,-22.732 72.178,-11.365 			"/>
+			<polygon fill="#8C95AC" points="85.302,-11.365 78.74,-22.732 85.302,-34.096 91.864,-22.732 			"/>
+			<polygon fill="#8C95AC" points="6.561,-11.365 0,-22.732 6.561,-34.096 13.123,-22.732 			"/>
+		</g>
+	</g>
+</pattern>
+<pattern  id="SVGID_1_" xlink:href="#Diamond_Cubes" patternTransform="matrix(1 0 0 -1 -57.0415 -17091.4512)">
+</pattern>
+<rect x="3.5" y="3.5" fill="url(#SVGID_1_)" stroke="#BDCCD4" stroke-width="7" stroke-miterlimit="10" width="200" height="200"/>
+<text transform="matrix(1 0 0 1 29.0605 188.9473)" fill="#272791" font-family="'LobsterTwo'" font-size="48">Pattern!</text>
+</svg>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>HTML Exercise 6 (Part I): basic tables</title>
+</head>
+<body>
+
+<h1>Creating Tables</h1>
+
+<h2>Creating basic tables</h2>
+
+<h3>Table 1</h3>
+<p>Create a table that just shows how the table is built using the basic table tags: <code>table, tr and td</code>. This table will use the default settings. In the first row, put the words "cell 1" in the first <code>td</code> tag. Put the words "cell 2" and "cell 3" in the second and third <code>td</code> tags. Cells 4, 5 and 6 go in the second row of the table. The table itself has two rows, and three columns. Tables can't go inside paragraphs, so you need to build them outside of paragraphs.</p>
+
+<table>
+    <tr>
+        <td>Cell 1</td>
+        <td>Cell 2</td>
+        <td>Cell 3</td>
+
+    </tr>
+    <tr>
+        <td>Cell 4</td>
+        <td>Cell 5</td>
+        <td>Cell 6</td>
+        
+    </tr>
+
+</table>
+<!-- put your first table here - you'll be building it from the ground up -->
+
+<h3>Table 2</h3>
+<p>Create a second table just like the first, but in this table, use the <code>border</code> attribute with a value of 1, so you can see the edges of the table and each row/cell. Remember, the border attribute is deprecated and will cause an error in the validator, but we'll use it until we learn how to style tables - inline styles don't work well for borders on tables.</p>
+<table border="1">
+    <tr>
+        <td>Cell 1</td>
+        <td>Cell 2</td>
+        <td>Cell 3</td>
+
+    </tr>
+    <tr>
+        <td>Cell 4</td>
+        <td>Cell 5</td>
+        <td>Cell 6</td>
+        
+    </tr>
+
+
+</table>
+<!-- put your second table here  -->
+
+<h3>Table 3</h3>
+<p>The third table will use an inline style in the table tag to set the width of the table, and will also use the border attribute. Create your third table just like the second, but with the width changed.</p>
+
+<p>By default, tables display the width of what is inside them, unless the width of their contents is greater than the space available; in that case, the browser will generate a scroll bar so you can see the end of the table. However, if you want the table to be a specific width, you can use the CSS <code>width</code> property to change the width. See lecture notes for details.</p>
+<table width=100%; border="1px">
+    <tr>
+        <td>Cell 1</td>
+        <td>Cell 2</td>
+        <td>Cell 3</td>
+
+    </tr>
+    <tr>
+        <td>Cell 4</td>
+        <td>Cell 5</td>
+        <td>Cell 6</td>
+        
+    </tr>
+
+</table>
+
+<!-- put your third table here  -->
+
+
+
+<h3>Table 4</h3>
+<p>The fourth table will experiment with rowspan. This is how you can merge together two cells vertically across the rows of a table. Set the border of this table at 1. Do not set its width. Create three rows with three cells with text inside them in each row: 1-3 on row one, 4-6 on row 2 and 7-9 on row three. This is just like the tables above, but with an extra row.</p>
+
+<p>After you have completed making this table, use the <code>rowspan</code> attribute to span rows 2 and 3 on the table. Remember, the rowspan attribute goes inside the cell (<code>td</code>) that you want to span the row below it. The value for rowspan is the number of rows that will be joined. If the number is 2, it is the originating cell, and one more directly below it.</p>
+
+
+
+<table border="1">
+    <tr>
+        <td>Cell 1</td>
+        <td>Cell 2</td>
+        <td>Cell 3</td>
+
+    </tr>
+    <tr>
+        <td rowspan="2">Cell 4</td>
+        <td>Cell 5</td>
+        <td>Cell 6</td>
+        
+    </tr>
+    <tr>
+        <td>Cell 8</td>
+        <td>Cell 9</td>
+        
+    </tr>
+
+</table>
+<!-- put your fourth table here  -->
+
+<h3>Table 5</h3>
+<p>Let's do this again with colspan so that the top row has just two cells: cell 1 spans the first two columns, and cell 3 is the last column in the row. You'll create a 3-row, 3-column table with a border of 1 just like you did for table 4, but this time don't span any rows. Span the first two cells in the top row.</p>
+
+<!-- put your fifth table here  -->
+
+
+<table border="1">
+    <tr>
+        <td colspan="2">Cell 1</td>
+        <td>Cell 3</td>
+    </tr>
+    <tr>
+        <td>Cell 4</td>
+        <td>Cell 5</td>
+        <td>Cell 6</td>
+    </tr>
+    <tr>
+        <td>Cell 7</td>
+        <td>Cell 8</td>
+        <td>Cell 9</td>
+    </tr>
+</table>
+
+<p><strong>Now <a href="https://validator.w3.org/nu/" target="_blank">validate your work</a></strong>. You should get errors for the border attribute, but NO OTHER errors. See screenshot.</p>
+</body>
+</html>

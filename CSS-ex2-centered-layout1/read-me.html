@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>CSS Exercise 2: Centered Layout Part I</title>
+<link type="text/css" rel="stylesheet" href="http://www.criminalanimal.org/student/styles/syllabus.css">
+<meta charset="utf-8" />
+<style>
+h2 {
+font-size: 1.2em;
+}
+code {
+	color: darkred;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+</style>
+</head>
+<body>
+<h1>Web Design<br />CSS Exercise 2: Centered Layout Part I</h1>
+<h2>CSS "Box Properties" with layout</h2>
+<h3>Focus on:</h3>
+<ul>
+<li>Centered layout using <code>div</code> tag and auto margins</li>
+<li>Using id selector</li>
+<li>CSS box properties: <code>padding, border, margin</code></li>
+<li>CSS background property: <code>background-color</code></li>
+<li>Using adjustments to default margin to create harmonius intervals with heading tags</li>
+<li>embedded style sheet</li>
+<li>use validators to check and correct work:
+<ul>
+<li><a href="https://validator.w3.org/" target="_blank">HTML validator</a></li>
+<li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS validator</a></li>
+</ul>
+</li>
+</ul>
+
+<h3>Overview</h3>
+<p>Use the <code>padding, border, margin, background-color</code> properties to style two versions of Denise Moore's resume. Resume 1 is marked up like we did it using nested unordered lists. Resume 2 is marked up using sections (something we did not do).</p>
+
+<p>The intention here is to show two valid ways to mark up this resume semantically, and showcase the differences when it comes to styling. Markup as list works best for a more traditional page look to the resume, and markup as sections allows for a more graphic display of the resume.</p>
+
+<h3>Workflow</h3>
+<p>You do not need to add any markup to the documents other than the <code>style</code> tag for the embedded style sheets and the <code>div</code> tag, with <code>id</code> attribute for the centered layout. Write styles using one id selector per page. The rest of the selectors will be element selectors.</p>
+
+<p>I recommend beginning work with the "big picture" styles (create centered layout, put in background colors, then work on details). Don't work on adjusting heading tag margins until you have finished the big things.</p>
+
+<p><mark>Read each of the separate page instructions <strong>carefully</strong>. They tell you pretty much exactly what to do.</mark></p>
+
+<h4>List resume</h4>
+
+<p>Colors you will need. It should be clear from the screenshot which styles need these colors:</p>
+<ul>
+	<li>#dfdfdf</li>
+	<li>#efefef</li>
+	<li>#333333</li>
+</ul>
+
+<p>Workflow for layout:</p>
+
+<ol>
+	<li>Add the <code>div</code> tag to the markup in the proper location, give it the id of "wrapper", and write the styles to center your layout. The live space is 800px (fairly narrow, but the resume reads better with a narrower live space since it is text heavy)*</li>
+	<li>Put the proper background colors into styles for the body and for the #wrapper.</li>
+	<li>You need padding on the wrapper. The top, left and right sides of the wrapper have the same padding, and the bottom has more. Look at the screenshot to determine with amount of padding you need; the left side and the bottom will help you make these decisions.</li>
+	<li>You need to zero out the margins on the body. That way the top and bottom of the wrapper will extend to the top and bottom of the viewport with no offset.</li>
+	<li>You need a 1px border on the left side of the wrapper only. It is dotted. You should be able to figure out what color it is from the screenshot.</li>
+	<li>remove the padding, margin and bullets from the unordered lists. </li>
+</ol>
+
+<p>Workflow for adjusting heading tag margins. Remember that by default, vertical margins "collapse" so they don't double up. There are a lot of margins here in the heading tags and the lists. These steps should help you figure out how to best adjust this:</p>
+
+<ol>
+	<li>zero out the top margin for the h1 tag.</li>
+	<li>The h1 and h2 tags need to be adjusted to have the same bottom margin. I used 12px.</li>
+	<li>The h3 tag needs different margins so that the text in the resume forms hierarchical groupings visually (through proximity and isolation). I put 12px on the top (it matches the bottom margin of h1 and h2), and 6px on the bottom, so the text below the h3 is closer to it and forms a grouping. </li>
+	<li>note: I used fixed pixels for these adjustments to the heading tags, even though the default margin is not <em>fixed</em>, but rather a <em>proportion</em> of the size of the type (<em>relative</em> to the size of the type). This is because I wanted the margins the same as each other irrespective of the size of the type in the headings. If I used a relative unit of measurement, the margin amounts would have been relative to the different heading sizes and not the same margin for all different heading sizes.</li>
+	<li>There is a border on the bottom of the h2. It is the same as the wrapper border in size, style and color.</li>
+</ol>
+
+<h4>Sections resume</h4>
+
+<p>Colors you will need. It should be clear from the screenshot which styles need these colors:</p>
+<ul>
+	<li>floralwhite</li>
+	<li>lightsteelblue</li>
+	<li>steelblue</li>
+</ul>
+
+<p>Workflow for layout:</p>
+
+<ol>
+	<li>Add the <code>div</code> tag to the markup in the proper location, give it the id of "wrapper", and write the styles to center your layout. The live space is 800px (fairly narrow, but the resume reads better with a narrower live space since it is text heavy)</li>
+	<li>Put the proper background color into styles for the body, for the header and for the sections</li>
+	<li>Zero out the margin on the body.</li>
+	<li>The #wrapper has no padding on the left and right (we don't see it in the layout except as a delimiter of the live space), but has the same padding on the top and bottom. Experiment with pixel amounts to match the screen shot. Even though you don't "see" the wrapper, you will see the interval at the top and bottom of the layout, that shows the background color of the body.</li>
+	<li>The header and the sections have the same padding as each other. The padding is the same on all four sides of the box. Experiment with the padding amount in pixels to get the correct value (use the left edge to evaluate the interval since it is consistent).</li>
+	<li>Ha, your intervals between the header and the sections all disappeared! That is because they became "boxy" and the margin in the heading tags is no longer collapsing and is no longer calculated from the margin above. You need to add those intervals back. The most efficient way is to consider where you need the spaces and "think efficiently." You don't need margin on tops and bottoms, just on one or the other. The easiest way is to put margin on the top of all the sections. Use the screenshot to figure out how much margin there is.</li>
+	<li>The header and the sections all need a bottom border. The header border is thicker than the section border, but they are the same color. Use the screen shot to refine the border size and select the proper color.</li>
+</ol>
+
+<p>Workflow for adjusting heading tag margins. Remember that by default, vertical margins "collapse" so they don't double up. Because this resume is broken up into visual blocks, the heading margins don't need as much adjustment. Follow these guidelines:</p>
+
+<ol>
+	<li>Zero out the top margins on the h1 and h2.</li>
+	<li>The bottom margins on h1 and h2 are fine.</li>
+	<li>The top margin on the h3 is fine, but adjust the bottom margin so that it is 6px.</li>
+</ol>
+
+<h4><mark>* About the total width of your live space</mark></h4>
+
+<p>In both layouts, the width of your wrapper is set at 800px. However, in the lists markup, the total width of the live space is <em>larger</em> than 800px. Why? Because padding has been added to both the left and right sides of the wrapper, and border to the left side.</p>
+
+<p><strong>Important note:</strong> when you set the width of an element that generates a block display box, the total width of that element is the width you set, plus any padding or border on the left and right sides of the box.</p>
+
+<p>We added padding to the left and right, and a border to the left. All those measurements get added to the 800px width to calculate the final total width of the #wrapper.</p>
+
+<p>See the live space screenshot to see a comparison of the two layouts.</p>
+
+<h3>Validation</h3>
+<p>You want to be sure you've written valid markup and valid styles. Use the online validator tools to check your work. If there are errors, <strong>read what the validator says about them</strong> and check the lines in your markup where the errors occur. 
+
+
+
+
+
+
+
+
+
+</body>
+</html>

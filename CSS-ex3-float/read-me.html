@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>CSS Exercise 3: Text Wrap with Float</title>
+<link type="text/css" rel="stylesheet" href="http://www.criminalanimal.org/student/styles/syllabus.css">
+<meta charset="utf-8" />
+<style>
+h2 {
+font-size: 1.2em;
+}
+code {
+	color: darkred;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+</style>
+</head>
+<body>
+<h1>Web Design<br />CSS Exercise 3: Using <code>float</code></h1>
+<h2>Creating text wrap with <code>float</code> property</h2>
+<h3>Focus on:</h3>
+<ul>
+<li>Using <code>float</code> property to create text wrap around an image</li>
+<li>Using class selectors</li>
+<li>Understanding "normal flow of the document" and what happens when elements leave normal flow</li>
+<li>Understanding "collapsed containers"</li>
+<li>Using <code>clearfix</code> class to fix collapsed container</li>
+<li>Using <code>overflow</code> property to fix collapsed container</li>
+<li>use validators to check and correct work:
+<ul>
+<li><a href="https://validator.w3.org/" target="_blank">HTML validator</a></li>
+<li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS validator</a></li>
+</ul>
+</li>
+</ul>
+
+<h3>Overview</h3>
+<p>You have two layouts that need to use <code>float</code> to create a "text wrap" effect.
+The instructions for each will specify how to create the text wrap, and correct collapsed containers.</p>
+
+<p><strong>Important:</strong> There are already some styles embedded, so you can simply add your styles to the existing style sheet. 
+
+<h3>Workflow</h3>
+<h4><code>text-wrap1.html</code> instructions</h4>
+
+<p>This page needs you to create a <code>feature-image</code> class to float the images within the news story. Both images will have this class assigned to them. Both will float to the left. View the screenshot to see the offset you will need in that style to create an interval between the edge of the image and the text that wraps around it on the right.</p>
+
+<p>The second image will cause the article to become a "collapsed container." Fix this using the "overflow" method. The style for the overflow will work in the article or the main. For this design, the main is probably the best place to put it.</p>
+
+<h4><code>text-wrap2.html</code> instructions</h4>
+
+<p>This page needs you to create a <code>feature-image</code> class to float the images within each of the sections about different aspects of viburnums (flowers, fruit, foliage). View the screenshot to see the offset you will need, and other styling for the feature images.</p>
+
+<p>The feature images will need some padding and a border to create the visual "frame" around them. They will also need some margin to offset the text. </p>
+
+<p>Your sections will collapse, and will also be laid out wrapping around previous sections' floated images. Our PDF lecture notes discuss this. You will use the "clearfix" method, which stops a float, to fix this. You'll need to create a class called <code>clearfix</code> and apply it to the sections that are "wrapping".</p>
+
+<p>You'll also need to fix the collapsed main with the "overflow" method. </p>
+
+<p>To get the proper intervals between your sections, you will need to use padding on the top of the sections. 20px should do the trick.</p>
+
+<h3>Validation</h3>
+<p>You want to be sure you've written valid markup and valid styles. Use the online validator tools to check your work. If there are errors, <strong>read what the validator says about them</strong> and check the lines in your markup where the errors occur. 
+</p>
+
+
+
+
+
+
+
+
+</body>
+</html>

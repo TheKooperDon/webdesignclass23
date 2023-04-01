@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>CSS Exercise 2: Centered Layout Part II</title>
+<link type="text/css" rel="stylesheet" href="http://www.criminalanimal.org/student/styles/syllabus.css">
+<meta charset="utf-8" />
+<style>
+h2 {
+font-size: 1.2em;
+}
+code {
+	color: darkred;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+</style>
+</head>
+<body>
+<h1>Web Design<br />CSS Exercise 2: Centered Layout Part II</h1>
+<h2>Multiple Wrappers</h2>
+<h3>Focus on:</h3>
+<ul>
+<li>Centered layout using <code>div</code> tag and auto margins</li>
+<li>Using class selector</li>
+<li>using id selector</li>
+<li>using element selector on unique tags only</li>
+<li>CSS box properties: <code>padding, border, margin</code></li>
+<li>CSS background property: <code>background-color</code></li>
+<li>CSS <code>width</code> property</li>
+<li>embedded style sheet</li>
+<li>use validators to check and correct work:
+<ul>
+<li><a href="https://validator.w3.org/" target="_blank">HTML validator</a></li>
+<li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS validator</a></li>
+</ul>
+</li>
+</ul>
+
+<h3>Overview</h3>
+<p>You have two pages: dogs and UWM. You will use embedded styles, and will use id, class and element selectors. It is important to look at the markup and see which tags have ids, so you can use id selectors for those. Tags which are UNIQUE will use element selectors for styling. Use any colors you like. Later, you'll use a class selector for your multiple wrappers.</p>
+
+<h3>Workflow</h3>
+<p>Study the screenshots. You can see that the background colors for different semantic structural tags extend all the way to the edges of the viewport, but the text within them is is delimited by an invisible fixed-width centered live space. Where you see different colors or a border is where your multiple wrappers go.</p>
+
+<h4>Dogs Page</h4>
+<ol>
+<li>Put background colors in the body and all the HTML5 semantic structural tags. You'll have some extra background colors that you'll delete later. Use ID selectors where there is an id in the markup. Use element selectors for the unique tags in the page (there are always 2!)</li>
+<li>Put padding in the HTML5 semantic structural tags where it is needed to "uncollapse" the default margins in the heading tags, paragraphs and lists. Most have the same padding on all four sides, but on dogs, the banner only has padding on the top. 10px of padding is appropriate.</li>
+<li>Zero out margins on the body.</li>
+<li>Decide where your wrappers will go. The screenshot shows you where either color or border extends all the way to the edge of the viewport. Each <code>div</code> tag that is needed to delimit the live space goes INSIDE the structural tag that has the extended background color or border. You'll use <code>class="wrapper"</code> in the opening <code>div</code> tag for each wrapper.</li>
+<li>Once your wrappers are in place, write the class style for the wrapper. It will apply to all the instances of <code>class="wrapper"</code> in your markup. The live space is 900px wide.</li>
+<li>Add the border to the structural element that needs it.</li>
+<li>Delete the background-color styles where they are not needed; be sure you do not have any extra background colors. Dogs page has 3.</li>
+</ol>
+
+<h4>UWM Page</h4>
+<ol>
+<li>Put background colors in the body and all the HTML5 semantic structural tags. You'll have some extra background colors that you'll delete later. Use ID selectors where there is an id in the markup. Use element selectors for the unique tags in the page (there are always 2!)</li>
+<li>Put padding in the HTML5 semantic structural tags where it is needed to "uncollapse" the default margins in the heading tags, paragraphs and lists. 10px of padding is appropriate. Put the same padding on all 4 sides of each box.</li>
+<li>Zero out margins on the body.</li>
+<li>Decide where your wrappers will go. The screenshot shows you where color extends all the way to the edge of the viewport. Each <code>div</code> tag that is needed to delimit the live space goes INSIDE the structural tag that has the extended background color or border. You'll use <code>class="wrapper"</code> in the opening <code>div</code> tag for each wrapper.</li>
+<li>Once your wrappers are in place, write the class style for the wrapper. It will apply to all the instances of <code>class="wrapper"</code> in your markup. The live space is 900px wide.</li>
+<li>Delete the background-color styles where they are not needed; be sure you do not have any extra background colors. UWM page has 3. Some are in different elements than the dogs page.</li>
+</ol>
+
+<h4>Hints</h4>
+<p>You have put a background color in the body. Remember that all elements default to "no" background color except the body. You can use the body's color in useful ways for your layouts. You do NOT need to put the same background color in, say, the colophon as the body. If they're the same, don't put a background color in the colophon.</p>
+
+<p>Also, in the screenshots, NONE of the background colors you see are in the <code>main</code>. You'll always put your wrappers on the outside of the <code>main</code>, for reasons that will become clear when we do multi-column layouts.</p>
+
+<h3>Validation</h3>
+<p>You want to be sure you've written valid markup and valid styles. Use the online validator tools to check your work. If there are errors, <strong>read what the validator says about them</strong> and check the lines in your markup where the errors occur. 
+
+
+
+
+
+
+
+
+
+</body>
+</html>

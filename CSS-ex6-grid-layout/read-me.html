@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>CSS Exercise 6: Grid Layout</title>
+<link type="text/css" rel="stylesheet" href="http://www.criminalanimal.org/student/styles/syllabus.css">
+<meta charset="utf-8" />
+<style>
+h2 {
+font-size: 1.2em;
+}
+code {
+	color: darkred;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<header id="banner">
+<h1>Web Design<br>
+CSS Exercise 6</h1>
+</header>
+
+<main>
+<article>
+<h2>Basics of using CSS <code>display: grid</code> for column layout</h2>
+
+<h3>Focus on</h3>
+<ul>
+<li><code>display: grid</code></li>
+<li><code>grid-template-columns</code></li>
+<li><code>grid-column-gap</code></li>
+<li><code>grid-row-gap</code></li>
+<li>non-semantic grouping tag (<code>div</code>)</li>
+</ul>
+
+
+<p>CSS grid display might look like CSS columns, but it isn't. Content doesn't "flow" automatically from left to right. The columns in grids are created instead according to the document tree and the number of columns you set up. It's quite a bit more complicated than columns, and you really need to understand the structure of your markup, containment hierarchy/document tree and how/when to use the <code>div</code> tag.</p>
+
+
+<h3>Workflow</h3>
+<h4>UWM News</h4>
+
+<p>This page is pretty much the same content as the "feature image" float page that we did in CSS Exercise 3. However, in this page, rather than the text wrapping around the images, the content is divided up into columns and doing the flip/flop left/right with image and text in each column.</p>
+
+<p>You'll notice from the screenshot that some of the content is NOT in the two-column layout. When you're designing your pages, it is up to you to decide what content will be in columns and what content will not. What is important is understanding that the <code>display: grid;</code> declaration is going to be looking to put child tags into the grid you specify. Look at the annotated screenshot to see how this is working.</p>
+
+<h4>Pizza Page 1</h4>
+<p>This page uses content from our HTML semantic structural tag exercises (Wy'East Pizza) and reformats it in different columns. This layout more closely mimics the kinds of designs that are in contemporary sites, particularly those with scrolling pages and no sidebars.</p>
+
+<p>You'll notice a combination of 2 and 3 column layouts. Look at the annotated screenshot to see how this is working.</p>
+
+<h4>Pizza Page 2</h4>
+
+<p>This page uses content from our HTML semantic structural tag exercises (Wy'East Pizza) and reformats it in different columns. This layout is different from the first pizza page in two ways:</p>
+
+<ol>
+<li>The Check Out These Pies section has more complex markup to include the heading tags and descriptions.</li>
+<li>The page has multiple wrappers so that background colors extend to the edges of the viewport.</li>
+</ol>
+
+<p>It can be tricky keeping track of all the divs, so pay close attention to the markup and what classes tell you about the tags they are applied to. Look at the annotated screenshot to see how this is working.</p>
+
+<h3>About images</h3>
+
+<p>One useful style when you're working with with CSS grid is using the feature-image class to set the width of images to 100%. That way, they are always the width of their container, even if that width changes.</p>
+
+<p>Be sure that you read the grid lecture notes, and view the video tutorials.</p>
+
+<p>There are screenshots of each page to help you with this.</p>
+
+
+</article>
+</main>
+</div>
+</body>
+</html>
