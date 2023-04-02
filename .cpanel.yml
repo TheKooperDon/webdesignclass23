@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/jsvjr/public_html/
-    - /bin/cp -R /home/jsvjr/public_html/webdesignclass23/ $DEPLOYPATH
+    - /bin/cp -R /home/jsvjr/repositories/webdesignclass23/ $DEPLOYPATH
