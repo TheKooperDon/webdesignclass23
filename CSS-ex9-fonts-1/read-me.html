@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>CSS Exercise 9: Fonts (Part I)</title>
+<link type="text/css" rel="stylesheet" href="http://www.criminalanimal.org/student/styles/syllabus.css">
+<style>
+h2 {
+font-size: 1.2em;
+}
+code {
+	color: darkred;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<header id="banner">
+<h1>Web Design<br>
+CSS Exercise 9: Fonts (Part I)</h1>
+</header>
+
+<main>
+<article>
+<h2>Using font stacks and Google Fonts</h2>
+<h3>Focus on:</h3>
+<ul>
+<li>Changing fonts with <code>font-family</code> property</li>
+<li>Understanding inheritance and how it allows for efficient typographic design</li>
+<li>Building proper font stacks</li>
+<li>Using <a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+</ul>
+<h3>Overview</h3>
+<p>Use the screen shot to help guide to to style Denise Moore's resume. Replicate the screen shot as closely as you can. The layout styling is done already so you can focus on the font styling.</p>
+
+<p>The margins have been zeroed out on all the heading tags for you. It has been replaced with padding, so you don't have to try to figure out how the intervals were achieved. However, in your own sites, you'll need to figure out how to do this stuff!</p>
+
+<p>You'll focus on setting up your fonts following best practices, building proper font stacks, and getting your Google Font to work.</p>
+
+<p>These are our "best practices" for setting up fonts. I have highlighted the ones that this exercise focuses on, and stricken the ones you don't need to do now. Later exercises will focus on these.</p>
+
+<ol>
+<li><mark>Set up the font family for the site in a style rule for the <code>body</code> tag. That way your fonts are unified and you ONLY need to write style rules for elements that use a different font (probably your headings, and perhaps your menu text). I require that you do this. It is a formula.</mark></li> 
+<li><s>Set up your styles to use root ems for the size of the type. I require that you do this. It is a formula.</s></li>
+<li><s>Use ems for any of the other proportional styles (line height, letter spacing, word spacing)</s></li>
+<li><mark>Most text should be aligned to the left. Don’t center large quantities of text. If in doubt, ask me. I’ll probably tell you not to center it.</mark></li> 
+<li><mark>Use google fonts for anything that isn’t “web safe.” But don’t use too many because it slows performance, and too many fonts is like too much salt in food anyway.</mark></li>
+<li><mark>Always build good font stacks with three choices: first choice font, second choice font, generic font family</mark></li>
+<li><mark>Always be sure that the fonts you put in your font stack are the same font family, and that you end with the correct generic font family for any font stack using serif, sans-serif or monospace fonts. Do not mix and match font families for serif, sans-serif or monospace.</mark></li>
+<li><mark>For Google Font font stacks that have serif, sans-serif or monospace as their pre-set generic font family in the stack that you copy and paste, you need to add a second choice font. Choose a web-safe font that is close to the appearance of the Google font you selected. I can help you make those choices.</mark></li>
+<li><mark>For Google Font font stacks that end in cursive, you MUST replace “cursive” with either serif or sans-serif – whichever font family is closest to the design you chose. The reason for this is because websafe cursive fonts won’t look anything like your google font choice, and will ruin your design. You also need to choose a web safe font for the second choice that matches the generic font family you choose to replace “cursive.”</mark></li>
+</ol>
+
+
+<h3>Workflow</h3>
+<p>Use the screen shot to help guide to to style Denise Moore's resume. Replicate the screen shot as closely as you can. Be sure to follow the highlighted "best practices" above.</p>
+
+<p>The fonts you need are Arial (web safe) and Bevan (Google Font)</p>
+
+<p>You will need the following properties to complete the exercise:</p>
+
+<ul>
+<li><code>font-family</code></li>
+<li><code>font-weight</code></li>
+<li><code>font-style</code></li>
+<li><code>text-align</code></li>
+</ul>
+
+<p>You only need to create one <strong>new</strong> style rule, but you'll need to add to several existing style rules.</p>
+
+<p>Be sure you have viewed the Google Font videos before you begin, because there are several important steps you need to take for your Google Fonts to work!</p>
+
+
+<h3>Validation</h3>
+<p>You want to be sure you've written valid markup and valid styles. Use the online validator tools to check your work. If there are errors, <strong>read what the validator says about them</strong> and check the lines in your markup where the errors occur. </p>
+
+<p>You shouldn't get an error from the copy-and-paste link to Google Fonts, but if you ever do, don't worry about it because you cannot change it. Any other errors need to be fixed, however.</p>
+
+</article>
+</main>
+</div>
+</body>
+</html>
