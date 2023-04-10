@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Styling Hyperlinks with Dynamic Pseudo-class Selectors</title>
+
+<style>
+
+/** LAYOUT **/
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper {
+    width: 948px;
+    margin: 0 auto;
+	margin-bottom: 40px;
+	background-color: #f2f2f2;
+	border-left: 1px dotted gray;
+	border-right: 1px dotted gray;
+	border-bottom: 3px solid black;
+	border-top: 3px solid black;
+}
+
+#banner {
+	border-bottom: 3px solid black;
+	padding: 10px;
+	height: 300px;
+}
+
+#sidebar {
+    float: left;
+    width: 202px;
+    padding: 10px;
+}
+
+main {
+    margin-left: 242px;
+    padding: 10px;
+	border-left: 1px dotted gray;
+}
+
+#sidebar h2 {
+	margin-bottom: 4px;
+}
+/** GLOBAL HYPERLINK STYLES **/
+
+a:link{
+  color:orange;
+  text-decoration: none;
+}
+a:visited{
+  color:green;
+}
+a:hover{
+  color:dodgerblue;
+}
+a:active{
+  color:red;
+
+}
+
+/** BANNER HYPERLINKS **/ 
+#banner a:link{}
+
+
+/** SIDEBAR HYPERLINKS **/
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+<div id="wrapper">
+<header id="banner">
+<h1><a href="">Simple Links and Dynamic Pseudo-class Selector</a></h1>
+<p>Styling simple links</p>
+</header>
+<aside id="sidebar">
+<nav>
+<h2>News</h2>
+<ul>
+<li><a href="">UWM News Stories</a></li>
+  <li><a href="">Today @ UWM</a></li>
+  <li><a href="">Featured Stories</a></li>
+  <li><a href="">Sports News</a></li>
+</ul>
+</nav>
+<nav>
+<h2>For the Media</h2>
+<ul>
+  <li><a href="">News Releases</a></li>
+  <li><a href="">Media Contacts</a></li>
+  <li><a href="">Experts Directory</a></li>
+  <li><a href="">Photo Archive</a></li>
+  <li><a href="">Maps</a></li>
+  <li><a href="">Quick Facts</a></li>
+  <li><a href="">Open Records Request</a></li>
+</ul>
+</nav>
+<nav>
+<h2>UWM Publications</h2>
+<ul>
+  <li><a href="">UWM Report</a></li>
+  <li><a href="">UWM in the News</a></li>
+  <li><a href="">UWM Radio</a></li>
+  <li><a href="">UWM Today</a></li>
+</ul>
+</nav>
+
+</aside>
+
+<main>
+<article>
+<!-- this is one long article without sections, although it could certainly be broken down into sections. Let the content of your page, and the document outline, be your guide. -->
+<h2>Using descendant selectors and dynamic pseudo-class selectors to style links</h2>
+<p>Catherine Van Leer started her life in one of the Midwest&rsquo;s most notorious places &ndash; Cabrini-Green on Chicago&rsquo;s north side. The public housing project is seen as one of the worst examples of urban planning in the country. It concentrated poor, mostly African American residents in substandard high-rise apartments and row houses. Cabrini-Green gained a national reputation for organized crime, gang violence and drug activity.</p>
+<p>Van Leer is one of the UWM&rsquo;s <a href="https://uwm.edu/graduateschool/mcnair/">McNair Scholars</a>. The goal of the federal program is to boost the number of students from underrepresented backgrounds who enter graduate school. The program was established in 1989 in honor of Ronald E. McNair, who was the second African American to fly in space. He died in the space shuttle Challenger explosion in 1986.</p>
+<p>This year, Van Leer and two other McNair Scholars are studying architecture, a degree program that typically sees low minority enrollment. Catherine Van Leer and her faculty mentor, Sammis White, professor of urban planning, in one of the studios in the School of Architecture and Urban Planning </p>
+<p>&ldquo;My goal is to be active in our community. I&rsquo;d like to work on policy changes that can have a lasting impact,&rdquo; she said.</p>
+<p>Van Leer&rsquo;s mentor for the research project was Sammis White, a professor of urban planning and the director of the Center for Workforce Development at UWM. He said it&rsquo;s rare to find an undergraduate who wants to study the issue of poverty.</p>
+<p>White says he&rsquo;s glad to see architecture and urban planning becoming a more diverse field of study at UWM.</p>
+<p>&ldquo;An awful lot of individuals pursue occupations they know something about,&rdquo; he said. &ldquo;There are very few black architects and even fewer black urban planners. It&rsquo;s been a major problem to try to get word of these fields out to a broader audience.&rdquo;</p>
+<p>Van Leer says she&rsquo;s considering <a href="https://uwm.edu/sarup/">UW-Milwaukee</a>, <a href="https://www.psu.edu/">Penn State</a> or the <a href="https://www.uic.edu/">University of Illinois at Chicago</a> for her graduate degree. She says she&rsquo;d like to end up working in Milwaukee.</p>
+<ul>
+<li><a href="">NOW ACCEPTING APPLICATIONS for the UWM Ronald E. McNair Post-Baccalaureate Achievement Program</a></li>
+<li><a href="">UWM McNair Mentor Application</a></li>
+<li><a href="">View program flyer</a></li>
+</ul>
+
+</article>
+</main>
+</div><!-- /wrapper -->
+</body>
+</html>

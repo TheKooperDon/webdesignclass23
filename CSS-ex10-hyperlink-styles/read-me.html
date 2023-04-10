@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>CSS Exercise 10: Hyperlink Styles</title>
+<link type="text/css" rel="stylesheet" href="http://www.criminalanimal.org/student/styles/syllabus.css">
+<style>
+h2 {
+font-size: 1.2em;
+}
+code {
+	color: darkred;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<header id="banner">
+<h1>Web Design<br>
+CSS Exercise 10</h1>
+</header>
+
+<main>
+<article>
+<h2>Styling hyperlinks in text and menus</h2>
+<h3>Focus on:</h3>
+<ul>
+<li>Using dynamic pseudo-class selector to style links according to user interaction</li>
+<li>Understanding how descendant selectors allow you to isolate ubiquitous tags and only style the instances you want according to those tags' ancestry in the document tree</li>
+<li>Reminders about using background images. There are two. The screenshot will make clear what they are and where they go.</li>
+
+</ul>
+<h3>Overview</h3>
+<p>Use the screen shot to help guide to to style the hyperlinks in the page. Replicate the screen shot as closely as you can. The layout styling is done already so you can focus on the hyperlink styling.</p>
+
+<p>There are hyperlinks in these three regions of the page. Descendant selectors allow you to isolate them all so the styles of the hyperlinks can be different:</p>
+<ul>
+<li>General styling of hyperlinks (so nothing is left out)</li>
+<li>Site ID in the banner</li>
+<li>Submenus in the sidebar</li>
+
+</ul>
+
+<p>You have two background images to put into the design. The screenshot should make it clear which one goes where in the layout.</p>
+
+<h3>Workflow</h3>
+<p>Most of the page styling is done already.</p> 
+
+<ol>
+<li>Begin by putting in the background images. Pay attention to the screenshot!</li>
+
+<li><p>Style the <strong>general hyperlink styles</strong> first:</p>
+
+<ul>
+<li>color of text hyperlinks is darkblue</li>
+<li>visited link color of text hyperlinks is black</li>
+<li>hover color of text hyperlinks is blue</li>
+<li>active color of text hyperlinks is black</li>
+<li>be sure you consult the screen shot to see the specific details of hover</li>
+</ul>
+</li>
+
+<li><p>Style the <strong>Site ID</strong> second:</p>
+
+<ul>
+<li>color of Site ID is black</li>
+<li>hover color of Site ID is maroon</li>
+<li>active color of Site ID is white</li>
+</ul>
+
+<p>You'll need to write a very specific selector to style the site id. My in-class demo shows how this is done. This is because of the cascade.</p>
+</li>
+<li>
+<p>Style the <strong>sidebar submenus</strong> last:</p>
+
+<ul>
+<li>color of sidebar hyperlinks is maroon</li>
+<li>hover color of sidebar hyperlinks is red</li>
+<li>active color of sidebar hyperlinks is black</li>
+<li>be sure you consult the screen shot to see the specific details of hover, and the spacing between hyperlinks, and between menus and their heading.</li>
+<li>a lot of default styling of lists has been changed!</li>
+</ul>
+</li>
+</ol>
+
+
+<h3>Validation</h3>
+<p>You want to be sure you've written valid markup and valid styles. Use the online validator tools to check your work. If there are errors, <strong>read what the validator says about them</strong> and check the lines in your markup where the errors occur. </p>
+
+
+</article>
+</main>
+</div>
+</body>
+</html>
