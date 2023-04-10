@@ -34,12 +34,13 @@ body{
     float: left;
     width: 202px;
     padding: 10px;
+    
 }
 
 main {
     margin-left: 242px;
     padding: 10px;
-	border-left: 1px dotted gray;
+	  border-left: 1px dotted gray;
 }
 
 #sidebar h2 {
@@ -63,10 +64,52 @@ a:active{
 }
 
 /** BANNER HYPERLINKS **/ 
-#banner a:link{}
+#banner ul{
+  margin:0;
+  padding:0;
+}
 
 
 /** SIDEBAR HYPERLINKS **/
+
+#sidebar ul {
+  margin: 0;
+  padding-left: 10px;
+  list-style-type: none;
+
+}
+#sidebar li {
+  margin-bottom: 8px;
+
+}
+#sidebar a{
+  display:block;
+  padding:8px;
+  background-color: #dfdfdf;
+  text-decoration: none;
+  border: 1px solid silver;
+
+}
+#sidebar a:hover {
+  padding:8px;
+  border: 1px solid silver;
+  color: white;
+  background-color: black;
+  border-bottom: 2px chocolate ;
+  text-decoration: none;
+
+}
+/*
+#sidebar a:visited{
+color:brown;
+}
+*/
+#sidebar a:active{
+color: chartreuse;
+padding:8px;
+border: 1px solid silver;
+}
+
 
 
 
