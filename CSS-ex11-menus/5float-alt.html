@@ -41,8 +41,39 @@ main {
 
 #menu {
 	background-color: darkseagreen;
+	overflow: auto;
 }
 
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type:none;
+	text-align: center;
+}
+
+#menu li {
+	float: left;
+	width:20%;
+}
+
+#menu a {
+	display: block;
+	padding: 10px 0;
+	color:green;
+	text-decoration: none;
+
+
+}
+
+#menu a:hover,
+#menu .current a{
+	background-color: #cfca89;
+}
+
+#menu a:active {
+	color:black;
+}
 </style>
 </head>
 
