@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Styling Links: Horizontal Menus (float equal width)</title>
+<style>
+
+/* GLOBAL STYLES */
+
+code {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+/* LAYOUT */
+
+#wrapper {
+	width: 948px;
+	margin: 0 auto;
+	background-color: #BDB76B;
+	border: 3px solid darkgreen;
+}
+
+main {
+	padding: 10px;
+	background-color: #cfca89;
+}
+
+/* BANNER */
+
+#banner p {
+	padding-left: 10px;
+}
+
+#banner h1 {
+	padding-left: 10px;
+}
+
+
+/* NAVIGATION */
+
+#menu {
+	background-color: darkseagreen;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="wrapper">
+<header id="banner">
+<h1>Using Lists for Navigation: Horizontal Menus</h1>
+<p>float method</p>
+<nav id="menu">
+<ul>
+  <li><a href="1inline.html">Inline</a></li>
+  <li><a href="2inline-alt.html">Inline Alt</a></li>
+  <li><a href="3inline-block.html">Inline-Block</a></li>
+  <li><a href="4float.html">Float</a></li>
+  <li class="current"><a href="5float-alt.html">Float Alt</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<article>
+
+<h2>Float Method of Horizontal Menu Styling (equal width links)</h2>
+
+<p>This method uses the float property on the list item element so that they will display side by side. The advantage to this method is that you retain the block display box so that you can use display: block on the anchor element and do image replacement (a lesson for next week).</p>
+<p>The disadvantage is that you will get all the collapsing containers, float drop and float clears that you need to accommodate. For simple menus, <code>overflow: auto</code> on the nav will fix the collapsed container.</p>
+
+<p>This menu is creating links of the same width in the banner. This can be a challenge for the box model (if the browser has bugs when calculating it) or you have a quantity that doesn't divide up tidily. You can use <code>:last-child</code> "structural pseudo-class selector" to fix this (a lesson for another day).</p>
+</article>
+</main>
+</div><!-- /wrapper -->
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Styling Links: Horizontal Menus (inline centered)</title>
+<style>
+
+/* GLOBAL STYLES */
+
+
+code {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+/* LAYOUT */
+
+#wrapper {
+	width: 948px;
+	margin: 0 auto;
+	background-color: lightcyan;
+	border: 2px solid cadetblue;
+}
+
+
+#banner h1, #banner p, main {
+	padding: 10px;
+}
+
+
+
+/* NAVIGATION */
+
+#menu {
+	background-color: cadetblue;
+	padding: 12px 0;
+}
+
+
+
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<header id="banner">
+<h1>Using Lists for Navigation: Horizontal Menus</h1>
+<p>display: inline method</p>
+<nav id="menu">
+<ul>
+  <li><a href="1inline.html">Inline</a></li>
+  <li class="current"><a href="2inline-alt.html">Inline Alt</a></li>
+  <li><a href="3inline-block.html">Inline-Block</a></li>
+  <li><a href="4float.html">Float</a></li>
+  <li><a href="5float-alt.html">Float Alt</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<article>
+
+<h2><code>display: inline</code> Method With Centered Menu</h2>
+
+<p>This method uses the <code>display: inline</code> declaration on the list item element so that they will all display side-by-side in a horizontal menu. The advantages to this method are that you will not have any collapsing containers, float drop, or float clears to deal with, and you can use the <code>text-align: center</code> declaration in the unordered list to center your menu in the banner. We'll center the menu below, and leave this one aligned to the left, although you could certainly align to the right if desired.</p>
+<p>The disadvantage is that inline display boxes can't be given set heights or widths, so image replacement doesn't work for them (image replacement is a lesson for next week).</p>
+
+<p>This menu is using text-align to center the menu within the header.</p>
+</article>
+</main>
+
+</div><!-- /wrapper -->
+</body>
+</html>

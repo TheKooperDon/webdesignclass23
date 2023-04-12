@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Styling Links: Horizontal Menus (inline-block)</title>
+<style>
+/* GLOBAL STYLES */
+
+code {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+/* LAYOUT */
+
+#wrapper {
+	width: 948px;
+	margin: 0 auto;
+}
+
+#banner {
+	border: double #999;
+	margin-bottom: 20px;
+	background-color: #dedede;
+	padding: 10px;
+}
+
+main {
+	border: double #999; 
+	background-color: #dedede;
+	padding: 10px;
+}
+
+/* NAVIGATION */
+
+
+</style>
+</head>
+
+<body>
+
+<div id="wrapper">
+<header id="banner">
+<h1>Using Lists for Navigation: Horizontal Menus</h1>
+<p>display: inline-block method</p>
+<nav id="menu">
+<ul>
+  <li><a href="1inline.html">Inline</a></li>
+  <li><a href="2inline-alt.html">Inline Alt</a></li>
+  <li class="current"><a href="3inline-block.html">Inline-Block</a></li>
+  <li><a href="4float.html">Float</a></li>
+  <li><a href="5float-alt.html">Float Alt</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<article>
+<h2><code>display: inline-block</code> Method With Centered Menu</h2>
+
+<p>This menu is using <code>display: inline-block</code> to create horizontal display; it is applied both to the list item and to the anchor tag. You can align the list items like text, and can style the links like block boxes. Nifty! The main advantage is that padding on your anchor tag will make the height of its parent (the list item) taller, which in turn makes the height of the unordered list AND the nav taller. This can be nice.</p> 
+<p>However, you'll want to take note that there is a typographic space between each list item (because it is displaying in the flow of text now, even though it retains some "block box" like properties). So your list items don't "touch each other" - there is an interval between them, which is the collapsed space from your markup (new lines, indents, etc). </p>
+</article>
+</main>
+
+</div><!-- /wrapper -->
+</body>
+</html>
