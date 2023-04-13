@@ -45,7 +45,7 @@ main {
 
 	display: inline-block;
 	margin: 0 2px;
-	color:maroon;
+	
 	background-color: #efefef;
 	border: 1px double gray;
 	
@@ -53,17 +53,24 @@ main {
 
 #menu a {
 	display: inline-block;
-	border: double #999;
-	color:black;
-	
+	color: maroon;
+	background-color: #efefef;
+	border: double gray 1 px;
 	padding: 10px;
 
 }
-#menu a:hover,
-#menu .current a {
+#menu a:active{
 	color:black;
+}
+#menu a:hover{
+	color:red;
+	background-color: #cccc;
 	border: 1px solid black;
 	
+}
+#menu .current a {
+	color: black;
+	border: black double 1px;
 }
 
 
