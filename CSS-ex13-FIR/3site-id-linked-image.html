@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Site IDs, Logos, and Image Replacement</title>
+<style>
+
+/* GLOBAL STYLES */
+
+html {
+	font-size: 1em; /* for root ems below */
+}
+
+body {
+	background-color: #e5e5e5;
+}
+
+/* LAYOUT */
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+article {
+padding: 10px;
+margin-bottom: 60px;
+}
+
+/* NAVIGATION */
+
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	margin-top: 10px;
+	padding: 0;
+	border-top: 2px solid #c7d5b2;
+	border-bottom: 2px solid #c7d5b2;
+	padding: 10px;
+	text-align: center;
+	font-family: calibri, arial, sans-serif;
+}
+
+#menu li {
+	display: inline;
+	margin: 0 20px;
+}
+
+#menu a {
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: #115027;
+	text-decoration: none;
+}
+
+#menu a:hover {
+	color: #c7d5b2;
+}
+
+/*** BANNER: LINKED IMAGE IN H1 TAG WITH PROPER ALT TEXT FOR DOCUMENT OUTLINE ***/
+
+
+#banner p {
+	font-family: calibri, arial, sans-serif;
+	color: #115027;
+	font-size: 1.2rem;
+	margin: 0;
+	margin-left: 30px;
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="wrapper">
+<header id="banner">
+<h1><a href="">Viburnums</a></h1>
+<p>Flowering Shrubs for the Landscape and the Birds</p>
+
+<nav id="menu">
+<ul>
+<li><a href="">Home</a></li>
+<li><a href="">Flowers</a></li>
+<li><a href="">Berries</a></li>
+</ul>
+</nav>
+
+</header>
+
+<main>
+<article>
+
+<h2>Site ID that uses an image in the page as content (not background).</h2>
+<h3>How to make this site id</h3>
+
+<p>Sometimes a logo or site id works best if it is a graphic, not text in the page. However, you must have your h1 tag for proper document outlines and SEO. The solution is to simply put that graphic in the page as an image, but <strong>inside</strong> the h1 tag. Your document outline will look better if you put the site id text as the value for the alt attribute (required anyway) in the image.</p>
+<p>I would probably opt for versions 1 or 2, rather than this version, but if you are smart about markup, it works okay. If you don't put the image in the h1 tag, you don't get a good document outline or good SEO, etc.</p>
+
+<p>The disadvantage to this method is that you can't get a hover style for the site id without javascript. Our hover in image replacement is done with background images (that's how we can do it in CSS without scripting).</p>
+
+<h3>Process:</h3>
+<ul>
+<li>The image goes in the page! But you need to put it inside the h1 and the anchor tag.</li>
+<li>Delete the text inside the anchor tag. The only thing in the anchor tag is the image: <code>&lt;h1&gt;&lt;a&gt;&lt;img /&gt;&lt;/a&gt;&lt;/h1&gt;</code></li>
+<li>put a margin on the left side of the image to move it to the right.</li>
+<li>be sure you use good alt text on the image, because that is what shows up in the document outliner.</li>
+<li>you'll need to set a height on the h1 to get everything looking good.</li>
+<li>zero out your margins on the h1</li>
+</ul>
+
+<h3>Viburnum filler text</h3>
+<p>Viburnums have long been one of the most popular flowering landscape shrubs. There are over 150 species of Viburnum. You can find a variety to suit any garden need: wet or dry, sun or shade, natural or formal, shrub or tree, native or exotic, USDA Zones 2-9. Bloom times span early spring through June and are followed by attractive fruit and outstanding fall foliage.</p>
+
+<p>Most viburnums prefer full sun but will adjust to partial shade. They like a moderately fertile soil with a pH between 5.6 - 6.6., although many do just fine in alkaline soils. In general, viburnums are not terrible particular about where they grow.</p>
+
+<p>That few pests will bother viburnums is one of the reasons they have become so popular in the landscape. Recently the Viburnum Leaf Beetle (VLB) has been introduced into North America trough Canada and has begun making its way south.</p>
+
+</article>
+</main>
+</div>
+</body>
+</html>

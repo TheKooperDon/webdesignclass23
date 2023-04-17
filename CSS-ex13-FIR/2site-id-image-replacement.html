@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Site IDs, Logos, and Image Replacement</title>
+<style>
+
+/* GLOBAL STYLES */
+
+html {
+	font-size: 1em; /* for root ems below */
+}
+
+body {
+	background-color: #e5e5e5;
+}
+
+/*	LAYOUT */
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+article {
+padding: 10px;
+margin-bottom: 60px;
+}
+
+/* NAVIGATION */ 
+
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	margin-top: 10px;
+	padding: 0;
+	border-top: 2px solid #c7d5b2;
+	border-bottom: 2px solid #c7d5b2;
+	padding: 10px;
+	text-align: center;
+	font-family: calibri, arial, sans-serif;
+}
+
+#menu li {
+	display: inline;
+	margin: 0 20px;
+}
+
+#menu a {
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: #115027;
+	text-decoration: none;
+}
+
+#menu a:hover {
+	color: #c7d5b2;
+}
+
+/*** BANNER: BACKGROUND-IMAGE WITH IMAGE REPLACEMENT ***/
+
+#banner p {
+	font-family: calibri, arial, sans-serif;
+	color: #115027;
+	font-size: 1.2rem;
+	margin: 0;
+	margin-left: 30px;
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+<div id="wrapper">
+<header id="banner">
+<h1><a href="">Viburnums</a></h1>
+<p>Flowering Shrubs for the Landscape and the Birds</p>
+
+<nav id="menu">
+<ul>
+<li><a href="">Home</a></li>
+<li><a href="">Flowers</a></li>
+<li><a href="">Berries</a></li>
+</ul>
+</nav>
+
+</header>
+
+<main>
+<article>
+<h2>Site ID that uses image replacement entirely.</h2>
+<h3>How to make this site id</h3>
+
+<p>Sometimes a logo or site id works best if it is a graphic, not text in the page. However, you must have your h1 tag for proper document outlines and SEO. One solution is to use image replacement. In this example, we don't need to create a style hook for the site id, since it is in the definitionally-unique h1 tag. However, people often do, using .sideid as the style hook. We also need to surround the <em>text itself in the site id</em> with a span tag, so it will not be visible in the final design.</p>
+<p>In another exercise (Ponies), we'll create image-based navigation (often fun on a homepage), and image replacement is a reasonable way to make it happen.</p>
+
+<h3>Process: </h3>
+<ul>
+<li>The background image goes in the anchor tag. You'll use a descendant selector for this: <code>#banner h1 a {}</code></li>
+<li>Because you want the anchor tag to be the exact size of the background image, you'll need to use the display property to make it generate a block display box, and then you'll use the height and width properties to assign it the same number of pixels as the graphic. See notes about high density display workarounds.</li>
+<li>The hover style puts in the hover background image for the anchor tag: <code>#banner h1 a:hover {}</code></li>
+<li>You need a <code>span</code> tag INSIDE the anchor tag so you can "turn off" the text. <code>&lt;a&gt;&lt;span&gt;linked text&lt;/span&gt;&lt;/a&gt;</code></li>
+<li>You set the opacity of the text inside the span to 0. <code>#banner h1 a span {}</code></li>
+</ul>
+
+<h3>Viburnum filler text</h3>
+<p>Viburnums have long been one of the most popular flowering landscape shrubs. There are over 150 species of Viburnum. You can find a variety to suit any garden need: wet or dry, sun or shade, natural or formal, shrub or tree, native or exotic, USDA Zones 2-9. Bloom times span early spring through June and are followed by attractive fruit and outstanding fall foliage.</p>
+
+<p>Most viburnums prefer full sun but will adjust to partial shade. They like a moderately fertile soil with a pH between 5.6 - 6.6., although many do just fine in alkaline soils. In general, viburnums are not terrible particular about where they grow.</p>
+
+<p>That few pests will bother viburnums is one of the reasons they have become so popular in the landscape. Recently the Viburnum Leaf Beetle (VLB) has been introduced into North America trough Canada and has begun making its way south.</p>
+</article>
+
+
+</main>
+
+</div>
+</body>
+</html>

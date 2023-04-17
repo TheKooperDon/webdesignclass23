@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Site IDs, Logos, and Image Replacement</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Milonga&display=swap" rel="stylesheet">
+<style>
+
+/* GLOBAL STYLES */
+
+html {
+	font-size: 1em; /* for root ems below */
+}
+body {
+	background-color: #e5e5e5;
+}
+
+/* LAYOUT */
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+main {
+	padding: 10px;
+}
+
+
+/* BANNER AND SITE ID */
+
+#banner{
+	padding: 10px;
+	border-bottom: 2px solid #448359;
+}
+
+#banner p {
+	font-family: 'Milonga', georgia, serif;
+	color: #448359;
+	font-size: 1.2rem;
+}
+
+#banner h1 {
+	margin: 0;
+	padding-top: 10px;
+}
+
+#banner h1 a {
+
+}
+
+#banner h1 a:hover {
+
+}
+
+/* NAVIGATION */
+
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	margin-top: -42px; /* this raises the menu up to the level of the tagline */
+	padding: 0;
+	text-align: right;
+}
+
+#menu li {
+	display: inline;
+	margin-right: 30px;
+}
+
+#menu a {
+	font-size: 1.2rem;
+	color: #448359;
+	font-family: 'Milonga', georgia, serif;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#menu a:hover {
+	color: darkgreen;
+}
+
+
+
+
+
+
+</style>
+</head>
+
+<body>
+
+<div id="wrapper">
+<header id="banner">
+<h1><a href="">Viburnums</a></h1>
+<p>Flowering Shrubs for the Landscape and the Birds</p>
+
+<nav id="menu">
+<ul>
+<li><a href="">Home</a></li>
+<li><a href="">Flowers</a></li>
+<li><a href="">Berries</a></li>
+</ul>
+</nav>
+
+</header>
+
+<main>
+<article>
+<h2>Site ID that uses decorative text, with "logo" background image.</h2>
+
+<h3>How to make this site id</h3>
+<p>With Google Fonts, other external font resources, and .png or SVG (Scalable Vector Graphics), it is possible to avoid image replacement, include a non-text logo as a background image, and create a compelling graphic for your banner. </p>
+
+<p>For this design, using pixels as your unit of measurement for sizing the h1 text makes sense because: 1. it will be very large and 2. it needs to fit the size of the logo. I've made it 50px. We're not making a responsive design, so we don't need to be concerned about scaling (it is doable: see Web II). I used 'Milonga' for the google font. You'll have to go get the link to the font resource.</p>
+
+<h3>Process:</h3>
+<ul>
+<li>The background image goes in the anchor tag so we can get a hover.</li>
+<li>remember to use background-repeat property to only see the background image once. I've resized the background image to be 75px tall.</li>
+<li>to "move" the location of the hyperlinked text so it doesn't overlap the background image, use padding on the left of the anchor tag. That creates offset between the background image and the display of the text within the display box.</li>
+<li>You'll need to set the height and width of the anchor tag, so use the display property to make the anchor tag generate a block display box.</li>
+<li>Remember the h1 has margin on its top and bottom. You'll need to zero this out.</li>
+<li>Create a hover style with a different background image and a change in text color</li>
+<li>View the screenshot for how this will look</li>
+</ul>
+
+<h3>Viburnum filler text</h3>
+<p>Viburnums have long been one of the most popular flowering landscape shrubs. There are over 150 species of Viburnum. You can find a variety to suit any garden need: wet or dry, sun or shade, natural or formal, shrub or tree, native or exotic, USDA Zones 2-9. Bloom times span early spring through June and are followed by attractive fruit and outstanding fall foliage.</p>
+
+<p>Most viburnums prefer full sun but will adjust to partial shade. They like a moderately fertile soil with a pH between 5.6 - 6.6., although many do just fine in alkaline soils. In general, viburnums are not terrible particular about where they grow.</p>
+
+<p>That few pests will bother viburnums is one of the reasons they have become so popular in the landscape. Recently the Viburnum Leaf Beetle (VLB) has been introduced into North America trough Canada and has begun making its way south.</p>
+</article>
+
+
+</main>
+</div>
+</body>
+</html>
