@@ -25,8 +25,8 @@ main, header {
 
 /***** IMAGE REPLACEMENT FOR SHORTCUT MENU SUITABLE FOR SHOWY HOMEPAGE *****/
 
-.home article {
-/* use this to align text */
+.home article{
+	text-align: center;
 }
 
 .shortcut-menu ul{
@@ -38,11 +38,48 @@ main, header {
 
 .shortcut-menu li{
 	display: inline-block;
+	margin: 0 15px;
 }
-.shortcut-menu{
+.shortcut-menu span{
+	opacity: 0;
+}
+
+.shortcut-menu a{
+	display: inline-block;
+	height: 200px;
+	width: 200px;
+	background-size: 200px;
+	border: 6px solid white;
+}
+
+.shortcut-menu .dogs a {
+	background-image: url(images/dog.png);
+	
+}
+.shortcut-menu .cats a {
+	background-image: url(images/cat.png);
+	
+}
+.shortcut-menu .fish a {
+	background-image: url(images/fish.png);
 	
 }
 
+.shortcut-menu .dogs a:hover {
+	background-image: url(images/dog-over.png);
+	border: 6px blue solid;
+	
+}
+.shortcut-menu .cats a:hover {
+	background-image: url(images/cat-over.png);
+	border: 6px blue solid;
+	
+}
+.shortcut-menu .fish a:hover {
+	background-image: url(images/fish-over.png);
+	border: 6px blue solid;
+	
+}
 </style>
 </head>
 
@@ -67,7 +104,7 @@ main, header {
 
 <main>
 <article>
-<h2>Welcome to Pets!</h2>
+<h2 class="page-name">Welcome to Pets!</h2>
 <nav class="shortcut-menu">
 <ul>
 <li class="dogs"><a href=""><span>Dogs</span></a></li>

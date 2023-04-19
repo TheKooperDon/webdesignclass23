@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>position: absolute</title>
+
+<style>
+#wrapper {
+width: 800px;
+margin: 0 auto;
+background-color: #dedede;
+padding: 10px;
+}
+
+#banner {
+	border-bottom: 3px solid black;
+}
+
+#banner code {
+	font-size: 1.5em;
+}
+
+code {
+font-family: courier, monospace;
+color: maroon;
+}
+
+main{
+	line-height: 1.4em;
+}
+
+
+.red {
+background-color: red;
+padding: 10px;
+margin-bottom: 5px;
+}
+
+.green {
+background-color: green;
+padding: 10px;
+margin-bottom: 5px;
+}
+
+
+.blue{
+background-color: aqua;
+padding: 10px;
+margin-bottom: 5px;
+}
+
+
+
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<header id="banner">
+<h1>Using Position Property</h1>
+<p><code><strong>position: absolute</strong></code></p>
+</header>
+<main>
+<article>
+<h2>Understanding Absolute Positioning</h2>
+<p><code>position: absolute</code> <strong>REMOVES</strong> the element from the normal flow of the document, and allows you to "pin" one corner using the top/bottom/left/right properties. Where the browser starts to count from the top, bottom, left or right depends on the <em>context box</em> (point of origin) for the <code>absolute</code> value.</p>
+<p>The context box for <code>position: absolute</code> is its <strong>MOST RECENTLY POSITIONED ANCESTOR</strong>. If none of its ancestors (remember your document tree!) has been positioned, then its context box is the body of the document.</p>
+<p>If you want to use <code>position: absolute</code> on an element in a centered layout, then you need to reset the context box by making the wrapper <strong>THE MOST RECENTLY POSITIONED ANCESTOR</strong>. You do this by including a <code>position: relative</code> declaration in the style rule for the wrapper. This is called <em>"resetting the context box."</em> If you are using absolute positioning in some other element in the page, it would be the relevant ancestor to use to "reset the context box." We'll do that in our "CSS Imagemap" exercise.</p>
+<p>Note: when you position an element, but don't use the top/bottom/left/right properties to actually move it, you need to know what will happen. With <code>position: absolute</code>, what happens is that the element leaves the normal flow and loses 100% width (if the element generates a block display box). Also, the element will invoke its z-index. But, it won't go anywhere.</p>
+<div class="red">
+<h2>RED</h2>
+</div>
+<div class="green">
+<h2>GREEN</h2>
+</div>
+<div class="blue">
+<h2>BLUE</h2>
+</div>
+</article>
+</main>
+</div><!-- /wrapper -->
+</body>
+</html>

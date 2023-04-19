@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>position: fixed</title>
+
+<style>
+#wrapper {
+width: 800px;
+margin: 0 auto;
+background-color: #dedede;
+padding: 10px;
+}
+
+#banner {
+	border-bottom: 3px solid black;
+}
+
+#banner code {
+	font-size: 1.5em;
+}
+
+code {
+font-family: courier, monospace;
+color: maroon;
+}
+
+main{
+	line-height: 1.4em;
+}
+
+.sticky {
+	background-color: pink;
+	padding: 10px;
+}
+
+
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<header id="banner">
+<h1>Using Position Property</h1>
+<p><code><strong>position: fixed</strong></code></p>
+</header>
+<main>
+<article>
+<h2>Understanding Fixed Positioning</h2>
+<p><code>position: fixed</code> <strong>REMOVES</strong> the element from the normal flow of the document, and allows you to "pin" one corner using the top/bottom/left/right properties. Where the browser starts to count from the top, bottom, left or right depends on the <em>context box</em> for the <code>fixed</code> value.</p>
+<p>The <em>context box</em> for <code>position: fixed</code> is always <strong>THE VIEWPORT</strong>. It is like a sticky note on the viewport. If you fix an element below the fold, you'll need to scroll to see it. However, if an element is above the fold, it will stay in that spot, relative to the viewport, no matter how much scrolling you do.</p>
+<div class="sticky">
+<h2>STICK THIS TO THE VIEWPORT!</h2>
+</div>
+</article>
+</main>
+</div><!-- /wrapper -->
+</body>
+</html>

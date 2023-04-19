@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>position: relative</title>
+
+<style>
+#wrapper {
+width: 800px;
+margin: 0 auto;
+background-color: #dedede;
+padding: 10px;
+}
+
+#banner {
+	border-bottom: 3px solid black;
+}
+
+#banner code {
+	font-size: 1.5em;
+}
+
+code {
+	font-family: courier, monospace;
+	color: maroon;
+}
+
+main{
+	line-height: 1.4em;
+}
+
+
+
+
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<header id="banner">
+<h1>Using Position Property</h1> 
+<p><code><strong>position: relative</strong></code></p>
+</header>
+<main>
+<article>
+<h2>Understanding Relative Positioning</h2>
+<p><code>position: relative</code> displays the element in the normal flow of the document, and its <em>context box</em> (ie: point of origin) is its position within the normal flow.</p>
+<p>So, when you use <code>position: relative</code> to actually <strong>MOVE</strong> an element, you use the top/bottom/left/right properties to locate the specific corner <strong>RELATIVE</strong> to the element's position within the normal flow.</p>
+<p>As you use the position property, ask yourself "where do I want to move the display of this element? Where will the browser start to 'count' to locate the corner of the element I am positioning?" If the answer is "I want to position this element <strong>RELATIVE</strong> to where it is in the normal flow" then <code>position: relative</code> is what you want.</p>
+<p>However, most designers don't use <code>position: relative</code> to actually <strong>MOVE</strong> the display of an element. Rather, because <code>position: relative</code> keeps the element displaying in the normal flow of the document (and therefore the elements that follow in the code can "see" the element for their display location - remember the Visual Formatting Model), <code>position: relative</code> is used to <strong>RESET THE CONTEXT BOX</strong> of descendant elements that you are positioning absolutely. So, if you have a centered layout, and you want to position an element absolutely within the wrapper, you need to put position: relative in the style rule for the wrapper so the element inside it will start counting from the edge of the wrapper. We'll do this in the <code>position: absolute</code> exercise page.</p>
+<p>Note: when you position an element, but don't use the top/bottom/left/right properties to actually move it, you need to know what will happen. With <code>position: relative</code>, what happens is the element will invoke its z-index. But, it won't go anywhere. That is why it this is so useful for "resetting the context box" for layouts that use absolute positioning within a centered layout.</p>
+</article>
+</main>
+</div><!-- /wrapper -->
+</body>
+</html>
