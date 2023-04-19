@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>CSS Exercise 14: Shortcut Menu With Image Replacement</title>
+<link type="text/css" rel="stylesheet" href="http://www.criminalanimal.org/student/styles/syllabus.css">
+<meta charset="utf-8" />
+<style>
+h2 {
+font-size: 1.2em;
+}
+code {
+	color: darkred;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<header id="banner">
+<h1>Web Design<br>
+CSS Exercise 14: Shortcut Menu With FIR</h1>
+</header>
+
+<main>
+<article>
+<h2>Creating Shortcut Menus</h2>
+<p>Shortcut menus can be nice to have on a homepage, or potentially on a page that represents a larger portion of a website. In any event, image replacement is a way you can eliminate the text and just use an image for the hyperlink.</p>
+
+<p>Watch the video on this so that you can see the glorious styling details.</p>
+
+<p>Note: if you WANT the text, you do not need to "replace" it, but you'll probably want to use relative positioning to get it where you want it inside the anchor tag's display box. This exercise has you replacing it.</p>
+
+
+<h3>Take note of the markup!</h3>
+<p>There is a nav in the homepage's article, and it will need the class <code>shortcut-menu</code> so you can style it specifically. Because you probably want to style other aspects of the homepage differently than the rest of the site, the body on the homepage has a class of <code>home</code> and I've written styles assuming multiple pages in a site that don't want centered text in all the articles.</p>
+
+<p>You'll have to put classes into each of the shortcut menu's list items, and you'll need the span to isolate the text within the anchor tags. See the FIR video on how to do this. You've done it already in the site id exercise.</p>
+
+<h3>Dimensions for the shortcut menu anchor tags</h3>
+<p>Each of the anchor tags needs to be 225px wide and 225px tall (they are square).</p>
+
+<p>The background images are larger than they will display, so they remain crisp on high-density displays. See your image optimization notes for more information. They will need to be styled with <code>background-size</code> so that they are also 225px square. See background image notes for more information.</p>
+
+<p>This design has a hover for the image, so be sure you create a hover style!</p>
+
+<h3>Centering the menu</h3>
+<p>The list items need to display horizontally, and you need to be able to set the dimensions on the anchor tag. You also want to center the anchor tags in the width of the nav and/or ul. <code>display: inline-block</code> is the best way to achieve this because you can use <code>text-align</code> to center the list items and then height and width will work on the anchor tag.</p>
+
+
+<h3>Hover styles</h3>
+<p>You have many options for hover styles. I made simple images that desaturate the color, but you could do many different things with this. Of course, you'll need to write hover styles to get the hover images to work.</p>
+
+
+<p><mark>As always, be sure your pages validate (html and css)</mark></p>
+
+</article>
+</main>
+</div>
+</body>
+</html>
