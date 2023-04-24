@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Applying the Position Property: Menu and Links</title>
+
+<style>
+
+html {
+	font-size: 1em;
+}
+
+body {
+background-color: #bbe486;
+margin: 0;
+padding: 0;
+font-family: calibri, arial, sans-serif;
+}
+
+#wrapper {
+	width: 940px;
+	margin: 0 auto;
+background-color: #ffffff;
+}
+
+
+ul {
+list-style-type: none;
+padding: 0;
+
+}
+
+#banner {
+height: 120px;
+background-color: white;
+border-bottom: 6px solid green;
+}
+
+#banner h1 {
+margin: 0;
+margin-left: 10px;
+font-size: 2.2em;
+text-transform: uppercase;
+
+}
+
+#banner p {
+font-size: 1.2em;
+margin-left: 10px;
+}
+
+#menu {
+
+}
+
+#menu ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+background-color: #bbe486;
+text-align: right;
+border-top: 6px solid green;
+overflow: auto;
+}
+
+#menu li {
+float: right;
+}
+
+#menu a {
+display: block;
+text-decoration: none;
+color: green;
+padding: 10px;
+}
+
+#menu a:hover, #menu .current a {
+color: #224422;
+background-color: white;
+}
+
+main {
+padding: 10px;
+padding-bottom: 30px;
+}
+
+section h2 {
+font-size: 1.2em;
+}
+
+/** shortcuts menu **/
+
+.shortcuts ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.shortcuts li {
+	display: inline-block;
+	margin: 0 20px;
+}
+
+.shortcuts a {
+	display: inline-block;
+	height: 225px;
+	width: 225px;
+	text-decoration: none;
+}
+
+.shortcuts span {
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: black;
+
+}
+
+.shortcuts a:hover span {
+	background-color: rgba(255, 255, 255, .5);
+}
+
+.foliage a {
+	background-image: url(images/viburnum-foliage.jpg);
+}
+
+.flowers a {
+	background-image: url(images/viburnum-flower.jpg);
+}
+
+.fruit a {
+	background-image: url(images/viburnum-fruit.jpg);
+}
+
+
+
+
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<header id="banner">
+<h1>Viburnums</h1>
+<p>Flowering Shrubs for the Landscape and the Birds</p>
+
+<nav id="menu">
+<ul>
+<li class="current"><a href="">Home</a></li>
+<li><a href="">Cultural Requirements</a></li>
+<li><a href="">Propagation</a></li>
+<li><a href="">Description</a></li>
+<li><a href="">Foliage</a></li>
+<li><a href="">Flowers</a></li>
+<li><a href="">Fruit</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<article>
+<h2>All About Viburnums with Moar <code>position</code> property</h2>
+<section>
+<h2>What's on this page</h2>
+<p><mark>The <code>position</code> property is best used like pungent spices in cooking: in small, controlled amounts. It plays havoc with the normal flow, causes overlapping, and creates layouts that break easily, so use it when it is the only way to present your page the way you want.</mark></p>
+<p>One common use for <code>position: absolute</code> aside from things like CSS Image Maps is when you want to relocate something like your banner or your main menu in a location other than the top of the page. The top of the page is where it <strong>must</strong> be in the markup, but you can easily position it where you'd like. Our other examples showed how <code>position: fixed</code> was used to make a sticky banner ("stuck" to top of viewport) or a sticky menu ("stuck" to bottom of viewport) as a footer. </p>
+<p><strong>But what if you just want to move your menu above your site id?</strong> Don't mark it up there, position it! That is what we'll do here: move the menu above the site id in the banner. While usually you need to reset the context box for <code>position: absolute</code>, in this particular design you do not because the <code>body</code> is okay as the context box. However, if you had a banner that didn't "touch" the top of the viewport, you'd need to reset the context box to be the banner.</p>
+</section>
+<!-- /overview -->
+
+<section>
+<h2>What about <code>position: relative</code>?</h2>
+<p>Mostly we'll use <code>position: relative</code> to reset the context box for absolutely positioned elements, although we did not need to in this design to move the menu, because having its top positioned in relation to the <code>body</code> worked okay for us.</p>
+
+<p>In our other exercises with absolutely positioned elements, we "made room" for them in the layout (where they overlapped content in their new location) using padding or margin. But sometimes padding and margin aren't the best choice. Below are some "shortcut" links like you might have on a homepage, with text in the vertical center of the box. It can be tricky to get text there, and relative positioning is one easy way to do it. Padding and margin don't work as well because of a few things: padding will make a box taller so you have to do all kinds of box model math to get it the correct size again, and margin sometimes calculates from the bottoms of other elements in the layout rather than from the top of the parent. So... use <code>position: relative</code>.</p>
+
+
+<nav class="shortcuts">
+<ul>
+<li class="foliage"><a href=""><span>Foliage</span></a></li>
+<li class="flowers"><a href=""><span>Flowers</span></a></li>
+<li class="fruit"><a href=""><span>Fruit</span></a></li>
+</ul>
+</nav>
+<p>I was too lazy to make a hover graphic that dimmed the brightness of the images, so I just put a translucent background color in the span. But you could make better hover graphics to style this the most appropriate way for your site.</p>
+
+</section>
+</article>
+</main>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Exercise 16: Applied Position Property</title>
+<meta charset="utf-8" />
+<link type="text/css" rel="stylesheet" href="http://www.criminalanimal.org/student/styles/syllabus.css">
+<meta charset="utf-8" />
+<style>
+h2 {
+font-size: 1.2em;
+}
+code {
+	color: darkred;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<header id="banner">
+<h1>Web Design<br>
+CSS Exercise 16: Applied Position Property</h1>
+</header>
+
+<main>
+<article>
+<h2>Using the <code>position</code> property in useful ways</h2>
+<p>Be sure that you read the position property lecture notes, view the linked-in learning video assignments, the Canvas video tutorials and complete CSS Exercise 12 before you begin this exercise.</p>
+
+<p>You'll be using all 3 of the values for the position property: <code>relative, absolute, fixed</code>. Of course, you don't use them all in the same page, but you'll need them all to complete every page in the exercise.</p>
+
+<p>Also, read the text in the body of the exercises; it has good information about the position property.</p>
+
+<p>This exercise contains the following pages</p>
+<ol>
+<li>"Sticky Banner"</li>
+<li>"Sticky Menu as Footer"</li>
+<li>Applied Position (absolute and relative)</li>
+</ol>
+
+<p>Key points to consider as you complete these exercises:</p>
+<ul>
+<li>what each of the values for position property do with respect to the <mark>"normal flow of the document"</mark></li>
+<li>what each of the values for position property do with respect to the <mark>"context box"</mark> (zero point/point of origin) for positioning the element</li>
+<li>What happens when elements leave the normal flow of the document:
+<ul>
+<li>lose any default 100% width</li>
+<li>come to top of stacking order (position property also causes this to happen, even if element does not leave normal flow)</li>
+<li>is laid out in its location within the normal flow if you do not move it with top/bottom/left/right properties</li>
+<li>subsequent elements lay out as if that element were not there in the markup</li>
+<li>position is not like float (float leaves normal flow, but has a "wrapping" feature which is not related to the normal flow but rather to float itself) so positioned elements that leave the normal flow will overlap stuff and cover it up</li>
+</ul>
+</li>
+</ul>
+
+<h3>1: Sticky Banner</h3>
+<p>Recreate the sticky banner demonstrated in the video. <strong>Pay close attention to which value for the position property is needed.</strong> Understand the "context box" (point of origin/zero point) for relocating the positioned element.</p>
+
+
+
+<h3>2: Sticky Menu as Footer</h3>
+<p>Recreate the sticky menu as footer demonstrated in the video. <strong>Pay close attention to which value for the position property is needed.</strong> Understand the "context box" (point of origin/zero point) for relocating the positioned element.</p>
+
+
+<h3>3: Menu at Top of Banner and Shortcut Menu</h3>
+<p>Move the menu and make fancy links as demonstrated in the videos (this page has two videos: one for moving menu and another for the shortcut menu design). You don't need to style the menu other than to move it, but you do need to style the shortcut menu. This involves <strong>image replacement</strong>. You can see the screen shot for details. </p>
+
+<p><strong>Pay close attention to which value for the position property is needed to move the menu above the site id.</strong> Understand the "context box" (point of origin/zero point) for relocating the positioned element.</p>
+
+<p>All the shortcut menu links have hover styles in the text. The text is "hidden" until the hover. Then it shows up again. Change opacity on <code>span</code> to make this happen. <strong>Pay close attention to which value for the position property is needed to move the text into the vertical center of the hyperlink.</strong> Understand the "context box" (point of origin/zero point) for relocating the positioned element.</p>
+
+<p><mark>As always, be sure your pages validate (html and css)</mark></p>
+
+</article>
+</main>
+</div>
+</body>
+</html>
