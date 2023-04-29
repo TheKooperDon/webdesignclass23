@@ -31,6 +31,7 @@ main {
 	padding-top: 30px;
 	position: relative;
 	top: -25px;
+	border-radius:  0 0 15px 15px;
 }
 
 #banner {
@@ -40,6 +41,7 @@ main {
 h1 {
 	font-size: 2.5rem;
 	margin-top: 0;
+	text-shadow: 0 0 5px #03FF35;
 
 }
 
@@ -73,11 +75,18 @@ h1 {
 	letter-spacing: .025em;
 	text-decoration: none;
 	color: white;
+	border-radius: 15px 15px 0 0;
+	
 }
 
 #menu a:hover  {
 	background-color: lightgreen;
 	color: darkgreen;
+	-webkit-transition: all 500ms ease-in;
+-moz-transition: all 500ms ease-in;
+-ms-transition: all 500ms ease-in;
+-o-transition: all 500ms ease-in;
+transition: all 500ms ease-in;
 }
 
 #menu .current a {
@@ -114,6 +123,7 @@ h1 {
 	font-weight: bold;
 	color: darkgreen;
 	letter-spacing: .025em;
+	border-radius: 10px;
 }
 
 .shortcut-menu a:hover {
