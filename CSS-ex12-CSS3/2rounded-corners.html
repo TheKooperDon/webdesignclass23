@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>CSS3: Rounded Corners</title>
+<style>
+
+#wrapper {
+width: 800px;
+margin: 0 auto;
+background-color: #dddddd;
+}
+
+main, #banner p, h1, #colophon {
+	padding: 10px;
+}
+
+main {
+	background-color: #efefef;
+
+}
+
+#menu ul {
+list-style-type: none;
+margin: 0;
+padding: 0 0 0 4px;
+overflow: auto;
+
+}
+
+#menu li {
+display: inline-block;
+margin: 0 2px;
+
+}
+
+#menu a {
+	display:inline-block;
+	background-color: #efefef;
+	padding: 12px;
+	border-top: 2px solid silver;
+	border-right: 2px solid silver;
+	border-left: 2px solid silver;
+}
+
+/*** circle ***/
+/* the markup for this is odd because this is non-semantic; in all likelihood you'l have semantic elements you are styling! so adapt as appropriate! */
+
+.circle {
+	text-align: center;
+}
+.circle div {
+	display: inline-block;
+	background-color: gold;
+	height: 300px;
+	width: 300px;
+}
+
+
+
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<header id="banner">
+<h1>CSS3: Rounded Corners</h1>
+<p>Cool and irritating all at once</p>
+<nav id="menu">
+<ul>
+<li><a href="#">Wind</a></li>
+<li><a href="#">Smoke</a></li>
+<li><a href="#">Water</a></li>
+<li><a href="#">Light</a></li>
+<li><a href="#">Readings</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Home</a></li>		
+</ul>
+</nav>
+</header>
+
+<main>
+<article>
+<h2>Using CSS3</h2>
+
+<p class="clearfix">CSS3 opens up many styling options that don't exist in CSS2 (which is what we've been using for the most part). However, many CSS3 properties aren't implemented in a standard way across browsers, and require us to use special "vendor prefixes" to communicate with the different layout engines associated with each of the browsers</p>
+<p><a href="http://css3generator.com/" target="_blank">CSS3 Generator</a> is a useful site that can help you with some of the CSS3 challenges. It won't do everything, but it will take care of the basics. Also, the lynda.com video will give you other syntax and describe how it works in greater detail.</p>
+<p>For text shadow, here is the property you need:</p>
+<p>
+<code>-webkit-border-radius<br />
+border-radius</code>
+</p>
+<div class="circle">
+<div>
+<p>this will be a circle!</p>
+</div>
+</div>
+
+</article>
+</main>
+
+<footer id="colophon">
+<p>CSS3 is super-fun!</p>
+</footer>
+</div><!-- /wrapper -->
+</body>
+</html>

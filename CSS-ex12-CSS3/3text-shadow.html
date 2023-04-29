@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>CSS3: Text Shadow</title>
+<style>
+html {
+	font-size: 1em;
+}
+
+#wrapper {
+width: 800px;
+margin: 0 auto;
+background-color: #dddddd;
+padding: 10px;
+}
+
+h1 {
+font-size: 2.5rem;
+}
+
+.clearfix {
+clear: both;
+}
+
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<header id="banner">
+<h1>CSS3: Text Shadow</h1>
+<p>Cool and irritating all at once</p>
+</header>
+
+<main>
+<article>
+<h2>Using CSS3 <code>text-shadow</code> property</h2>
+<h3 class="shadow1">Shadow One</h3>
+<h3 class="shadow2">Shadow Two</h3>
+<h3 class="shadow3">Shadow Three</h3>
+<p class="clearfix">CSS3 opens up many styling options that don't exist in CSS2 (which is what we've been using for the most part). However, many CSS3 properties aren't implemented in a standard way across browsers, and require us to use special "vendor prefixes" to communicate with the different layout engines associated with each of the browsers</p>
+<p><a href="http://css3generator.com/" target="_blank">CSS3 Generator</a> is a useful site that can help you with some of the CSS3 challenges. It won't do everything, but it will take care of the basics. Also, the lynda.com video will give you other syntax and describe how it works in greater detail. You can experiment with the property at <a href="http://www.w3schools.com/cssref/css3_pr_text-shadow.asp" target="_blank">W3School's page</a>.</p>
+<p>For text shadow, here is the property you need:</p>
+<p>
+<code>text-shadow: h-shadow v-shadow blur color;</code>
+</p>
+
+</article>
+</main>
+
+<footer id="colophon">
+<p>CSS3 is super-fun!</p>
+</footer>
+
+</div><!-- /wrapper -->
+</body>
+</html>

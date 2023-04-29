@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>CSS3: Box Shadow</title>
+<style>
+
+#wrapper {
+width: 800px;
+padding: 10px;
+margin: 0 auto;
+background-color: #dddddd;
+}
+
+.red, .green, .white {
+width: 200px;
+height: 200px;
+padding: 10px;
+margin-right: 30px;
+margin-bottom: 30px;
+display: inline-block;
+
+}
+
+.red {
+background-color: red;
+box-shadow: 10px 10px 5px 12px green;
+
+}
+
+.green {
+background-color: green;
+
+box-shadow: 0px 0px 12px #00ff00;
+
+}
+
+.white {
+background-color: white;
+box-shadow: inset 0px 0px 5px #666;
+}
+
+
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<header id="banner">
+<h1>CSS3: Box Shadow</h1>
+<p>Cool and irritating all at once</p>
+</header>
+
+<main>
+<article>
+<h2>Using CSS3 <code>box-shadow</code> property</h2>
+<div class="red">
+red box
+</div>
+<div class="green">
+green box
+</div>
+<div class="white">
+white box
+</div>
+
+<p>CSS3 opens up many styling options that don't exist in CSS2 (which is what we've been using for the most part). However, many CSS3 properties aren't implemented in a standard way across browsers, and require us to use special "vendor prefixes" to communicate with the different layout engines associated with each of the browsers</p>
+<p><a href="http://css3generator.com/" target="_blank">CSS3 Generator</a> is a useful site that can help you with some of the CSS3 challenges. It won't do everything, but it will take care of the basics. Also, the lynda.com video will give you other syntax and describe how it works in greater detail. You can "play" with the box shadow on <a href="http://www.w3schools.com/cssref/css3_pr_box-shadow.asp" target="_blank">W3School's site</a>.</p>
+<p>For box shadow, here is the property you need:</p>
+<p>
+<code>box-shadow: h-shadow v-shadow blur spread color inset;</code>
+</p>
+
+</article>
+</main>
+
+<footer id="colophon">
+<p>CSS3 is super-fun!</p>
+</footer>
+</div><!-- /wrapper -->
+</body>
+</html>

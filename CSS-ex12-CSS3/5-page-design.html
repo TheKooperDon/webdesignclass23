@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>CSS 3 Design</title>
+<style>
+html {
+	font-size: 1em;
+}
+
+body {
+	background-color: #efefef;
+	font-family: calibri, arial, sans-serif;
+}
+
+#wrapper {
+	width: 982px;
+	margin: 0 auto;
+	padding: 12px;
+}
+
+#menu {
+	position: relative;
+	z-index: 10;
+}
+
+main {
+	background-color: white;
+	border: 2px solid green;
+	padding: 16px;
+	padding-top: 30px;
+	position: relative;
+	top: -25px;
+}
+
+#banner {
+	padding-bottom: 0;
+}
+
+h1 {
+	font-size: 2.5rem;
+	margin-top: 0;
+
+}
+
+/***** Menu *****/
+
+#menu {
+	position: relative;
+	top: 2px;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow: auto;
+}
+
+#menu li {
+	float: left;
+	width: 25%;
+}
+
+#menu a {
+	display: block;
+	padding: 8px 0 10px 0;
+	background-color: green;
+	border: 2px solid green;
+	border-bottom: 0;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: .025em;
+	text-decoration: none;
+	color: white;
+}
+
+#menu a:hover  {
+	background-color: lightgreen;
+	color: darkgreen;
+}
+
+#menu .current a {
+	background-color: white;
+	color: darkgreen;
+}
+
+/***** Homepage Shortcuts *****/
+
+.shortcut-menu {
+	padding-top: 20px;
+	height: 200px;
+}
+
+.shortcut-menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.shortcut-menu li {
+	display: inline-block;
+	margin: 0 20px;
+}
+
+.shortcut-menu a {
+	display: inline-block;
+	background-color: lightgreen;
+	text-transform: uppercase;
+	text-align: center;
+	width: 150px;
+	padding: 20px 0;
+	font-weight: bold;
+	color: darkgreen;
+	letter-spacing: .025em;
+}
+
+.shortcut-menu a:hover {
+	background-color: green;
+	color: white;
+}
+
+
+/*** Page Content ***/
+
+article h2 {
+	text-align: center;
+	font-size: 1.8rem;
+
+}
+
+
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<header id="banner">
+<h1>Viburnums</h1>
+<p>Flowering Shrubs for the Landscape and the Birds</p>
+
+
+<nav id="menu">
+<ul>
+<li class="current"><a href="">Home</a></li>
+<li><a href="">Foliage</a></li>
+<li><a href="">Flowers</a></li>
+<li><a href="">Fruit</a></li>
+</ul>
+</nav>
+
+
+</header>
+
+<main>
+<article>
+<h2>Learn About Viburnums!</h2>
+<nav class="shortcut-menu">
+<ul>
+<li><a>Foliage</a></li>
+<li><a>Flowers</a></li>
+<li><a>Fruit</a></li>
+</ul>
+</nav>
+</article>
+</main>
+</div>
+</body>
+</html>
