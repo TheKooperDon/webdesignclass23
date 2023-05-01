@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>CSS Exercise 17: Dropdown Menus</title>
+<link type="text/css" rel="stylesheet" href="http://www.criminalanimal.org/student/styles/syllabus.css">
+<meta charset="utf-8" />
+<style>
+h2 {
+font-size: 1.2em;
+}
+code {
+	color: darkred;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<header id="banner">
+<h1>Web Design<br>
+CSS Exercise 17: Dropdown Menus</h1>
+</header>
+
+<main>
+<article>
+<h2>Using the <code>position</code> property in useful ways</h2>
+
+<p>Be sure that you read the dropdown menu lecture notes, and view the video tutorials.</p>
+
+<p>This exercise contains the following pages</p>
+<ol>
+<li>dropdown: just the dropdown mechanism</li>
+<li>dropdown2: simple styles</li>
+<li>dropdown3: fancier styles</li>
+</ol>
+
+<p>The embedded style sheets have comment delimiters to help you put styles in logical places. Read the comments, and put your style rules for the menu in their proper location.</p>
+
+<h3>Dropdown 1</h3>
+<p>This dropdown menu is only to get the mechanism working. You'll need to do the following:</p>
+<ul>
+<li>Remove default styling from all the unordered lists (bullet, indent, etc)</li>
+<li>Create a horizontal menu using the "float" method (remember to use the overflow property on the #menu)</li>
+<li>Set the width of the list items and nested list to 200px (of course, any menu you design will probably have different widths)</li>
+<li>use position property to "hide" nested list and then "show" it again when you hover over its parent list item</li>
+</ul>
+<p>The screen shot can show you what the menu looks like when you don't reveal the dropdowns or the hover styles. View the video to see what you menu looks like when you actually use it.</p>
+
+<h3>Dropdown 2</h3>
+<p>Begin by getting the mechanism working just like the first menu.</p>
+
+<p>Then fancy it up a little bit:</p>
+
+<ul>
+<li>The <code>#menu</code> needs a background color to serve as a menu bar. Use silver. </li>
+<li>The nested anchor tags also need this same background color (silver). You need a very specific descendant selector so you don't style the top level hyperlinks. Our notes show the different specifics that filter for each of the repeated elements in a dropdown menu. </li>
+<li>Because we're styling the hyperlink boxes, you need to change the display to block (all the menu anchor tags)</li>
+<li>You'll add 10px of padding to tops and bottoms of all the anchor tags as well. That makes the menu bar itself taller, too.</li>
+<li>The background color for hover for all the anchor tags is gray.</li>
+<li>The color of the text for hover for all the anchor tags is black.</li>
+</ul>
+
+<p>The screen shot can show you what the menu looks like when you don't reveal the dropdowns or the hover styles. View the video to see what you menu looks like when you actually use it.</p>
+
+<h3>Dropdown 3</h3>
+
+<p>This menu is more complex because you need to use child selectors. The other two menus only use descendant selectors.</p>
+
+<p>The reason you need child selectors is that you need to style <strong>only</strong> the top-level list item and <strong>only</strong> the top level anchor tag. Descendent selectors can filter for the last of these, but not for the first. The notes and video tutorials will help you with this, so be sure you read/watch them.</p>
+
+<p>Begin by getting the mechanism working just like the first menu. Then:</p>
+
+<ul>
+<li>Align the text to the center in the <code>#menu</code>.
+<li>The anchor tag needs to generate a block display box.</li>
+<li>All anchor tags have 10px padding on tops and bottoms.</li>
+<li>The background color for the hyperlinks is white. On hover, the background color for the hyperlinks is silver.</li>
+<li>The 1px border on the anchor tag is dark cyan, and changes to black on hover.</li>
+<li>The color for the hyperlinks is dark cyan. On hover, the color is black.</li>
+<li>To get the proper intervals between the list items in the dropdown, the nested list items have 6px margin on their bottom.</li>
+<li>To get the proper interval between the menu and the dropdown nested list, the nested list needs 6px padding on its top. This is the same selector you used <code>position</code> to "hide" the nested list with.</li>
+
+</ul>
+<p>Now for the child selector part:</p>
+<ul>
+<li>You want an interval between the top level list items. Use a child selector to put a 20px right margin on the top level list items.
+<li>You want the top level anchor tag to display all caps. Use a child selector and the <code>text-transform</code> property to make that text all caps.</li>
+<li>You want to "hold" the hover on the top level anchor tag even when you mouse over the nested list. Use a child selector to specify the same hover styles when the top level list item is being hovered over. The videos will show you how this is done.</li>
+</ul>
+
+<p>The screen shot can show you what the menu looks like when you don't reveal the dropdowns or the hover styles. View the video to see what you menu looks like when you actually use it.</p>
+
+
+
+</article>
+</main>
+</div>
+</body>
+</html>

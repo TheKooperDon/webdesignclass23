@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Dropdown Menu 2</title>
+<style>
+#wrapper {
+width: 960px;
+margin: 0 auto;
+}
+
+#banner p {
+	font-weight: bold;
+}
+
+
+/*** dropdown styles ***/
+
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<header id="banner">
+  <h1>Nested List Navigation Extravaganza</h1>
+  <p>Drop-down Menu 2 (some simple styling)</p>
+<nav id="menu">
+  <ul>
+    <li><a href="dropdown.html">Drop Down</a>
+    	<ul>
+    	<li><a href="#">cats</a></li>
+    	<li><a href="#">dogs</a></li>
+        <li><a href="#">guinea pigs</a></li>
+        </ul>
+    </li>
+	<li><a href="dropdown2.html">Drop Down 2</a>
+    	<ul>
+    	<li><a href="#">horses</a></li>
+    	<li><a href="#">highland cattle</a></li>
+        <li><a href="#">pygmy goats</a></li>
+        </ul>
+    </li>
+	 <li><a href="dropdown3.html">Drop Down 3</a>
+    	<ul>
+    	<li><a href="#">Stingrays</a></li>
+    	<li><a href="#">Puffer Fish</a></li>
+        <li><a href="#">Moray Eels</a></li>
+        </ul>
+    </li>
+  </ul> 
+</nav>
+</header>
+<main class='clearfix'>
+<article>
+<h2>Some Different Styling</h2>
+  <p>Still the SOS mechanism, but with some different styles.</p>
+  
+ <h2>About Son of Suckerfish dropdown menus</h2>
+  <p>This method uses nested lists to create complex submenus, and the hover
+    pseudoclass to "hide and show" them depending on whether a user is mousing
+    over the main topic.</p>
+    <p>The context box for <code>position: absolute</code> is the most recently position ancestor of the positioned element, or if there isn't one, the body element. In this exercise, the context box is the body because no ancestors have been positioned. Remember that if you don't actually use the offset coordinates (<code>top, bottom, left, right</code> properties) the positioned element will display where it would have been in the normal flow. So, <code>left: auto</code> puts the positioned element where it would have been in the normal flow, and we don't need to worry about the context box. :-)</p>
+  <p>This menu is created with the &quot;Son of Suckerfish&quot; method. Keep in mind that 100% CSS dropdown menus need a script for IE6 and earlier, but we'll not fuss that (you can read all about it at the Son of Suckerfish tutorial site). You can read about <a href="http://www.htmldog.com/articles/suckerfish/dropdowns/" target="_blank">Son of Suckerfish here</a>. Note that Son of Suckerfish is written in xhtml and there are some small variations in the CSS.</p>
+  <p>We're keeping this exercise simple so you can "see" the mechanism of the dropdown without a lot of CSS to make it look good. Here are some other dropdown menu tutorials if you are interested in fancying it up:</p>
+	<ul>
+	<li><a href="http://www.red-team-design.com/css3-dropdown-menu" target="_blank">Red Team CSS3 Dropdown Menu</a></li>
+	<li><a href="http://designmodo.com/css3-dropdown-menu/" target="_blank">Designmodo CSS3 Dropdown Menu</a> (notice that this designer uses class designations where I would probably choose to use ids - be aware of this as you look at the markup and style rules). This one has fancy CSS3 transitions.</li>
+	<li><a href="http://spyrestudios.com/38-open-source-css-dropdown-menus/" target="_blank">38 Open Source CSS Dropdown Menus</a></li>
+	</ul>
+</article>
+</main>
+  </div>
+  
+</body>
+</html>
