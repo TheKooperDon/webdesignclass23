@@ -17,11 +17,61 @@ margin: 0 auto;
 
 /*** dropdown styles ***/
 
+.clearfix{
+  clear: both;
+}
+#menu ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#menu li {
+  float: left;
+  width: 140px;
+}
+#menu li li{
+  margin-top:4px;
+}
+
+#menu li ul{
+  width: 140px;
+  position: absolute;
+  left: -999px;
+
+}
+
+#menu li:hover ul {
+  left:auto;
+}
+
+#menu a {
+  display: block;
+  padding: 12px 0;
+  border: 1px solid darkcyan;
+  background-color: white;
+  text-decoration: none;
+
+}
+ 
+#menu a:hover{
+  background-color: lightcyan;
+}
+
 
 
 /* child selectors to style top level list items and top level anchor tags */
 
+#menu>ul>li{
+  margin-right: 14px;
+}
 
+#menu>ul>li:hover>a{
+  background-color: lightcyan;
+}
+
+#menu>ul>li>a {
+  text-transform:uppercase;
+}
 
 </style>
 </head>

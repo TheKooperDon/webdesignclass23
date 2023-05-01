@@ -16,6 +16,50 @@ margin: 0 auto;
 
 /*** dropdown styles ***/
 
+#menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: auto;
+  background-color: lightgray;
+}
+
+#menu li {
+  float:left;
+  width: 130px;
+}
+
+#menu li ul{
+  position: absolute;
+  left:-999px;
+  width:130px
+}
+
+#menu li:hover ul{
+  left:auto;
+}
+
+#menu a {
+  display: block;
+  padding: 10px 0 10px 10px;
+  text-decoration: none;
+  color:black;
+
+
+}
+
+#menu a:hover {
+  background-color: gray;
+}
+
+#menu>ul>li:hover>a{
+  background-color: gray;
+}
+
+#menu li li a {
+  padding: 5px 0 5px 10px;
+}
+
 </style>
 </head>
 

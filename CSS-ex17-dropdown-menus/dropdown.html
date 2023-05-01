@@ -13,9 +13,34 @@ margin: 0 auto;
 }
 
 /* style needed to move the main down to prevent dropdown overlap */
-
-
+.clearfix{
+  clear: both;
+}
+main{
+  padding-top:80px;
+}
 /*** dropdown styles ***/
+#menu ul{
+  margin: 0;
+  padding:0;
+  list-style-type: none;
+}
+
+#menu li{
+  float: left;
+  width:150px;
+
+}
+
+#menu li ul {
+  position: absolute;
+  left:-999px;
+  width:150px;
+}
+
+#menu li:hover ul{
+  left:auto
+}
 
 
 
